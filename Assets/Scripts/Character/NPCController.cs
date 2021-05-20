@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour, Interactable
 {
-   public void Interact() {
-       Debug.Log("Interacted with NPC");
+    [SerializeField] Dialogue dialogue;
+
+    public void Interact() {
+       StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue));
    }
 }

@@ -190,7 +190,7 @@ public class BattleSystem : MonoBehaviour
             if (currentAnswer > 1)
                 currentAnswer-=2;
         }   
-        else if (Input.GetKeyDown(KeyCode.Z))
+        else if (Input.GetKeyDown(KeyCode.Space))
         {
             dialogueBox.EnableAnswerSelector(false);
             dialogueBox.EnableDialogueText(true);
