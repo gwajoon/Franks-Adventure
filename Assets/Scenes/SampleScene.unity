@@ -271,6 +271,10 @@ MonoBehaviour:
     lines:
     - Hi welcome to Comland!
     - I am Bob
+  sprites:
+  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
 --- !u!1 &57798714
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,25 +863,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &401695017
-Animator:
-  serializedVersion: 3
+--- !u!114 &401695017
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 401695013}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1276c71f437e74cb8a2b022528d7f8ee, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1680c0a8bba4470b250719d99ff9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkDownSprites:
+  - {fileID: 7152930139536384079, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: -5725962078152895296, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: -8401692288953904933, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: 7888922196035610388, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  walkUpSprites:
+  - {fileID: -4445699719359273135, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: 1892806461834874077, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: -8627026541424588849, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: -6780520195603233165, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  walkLeftSprites:
+  - {fileID: -1038918931832879880, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: 2690600881683387669, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: 6634202828824015816, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: -5008138227279614530, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  walkRightSprites:
+  - {fileID: -3303779423006393323, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: -790699523677361007, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: 8470420716495695676, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
+  - {fileID: 6167071470516247665, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
 --- !u!1 &430347954
 GameObject:
   m_ObjectHideFlags: 0
