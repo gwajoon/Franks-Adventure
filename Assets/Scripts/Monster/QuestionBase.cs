@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class QuestionBase : ScriptableObject
 {
-    [SerializeField] string name;
+    [SerializeField] new string name;
     [SerializeField] string explanation;
     [SerializeField] List<AnswerBase> answers;
     [SerializeField] AnswerBase correctAnswer;
