@@ -28,8 +28,9 @@ public class BattleUnit : MonoBehaviour
         monster = new Monster(_base, level);
         image.sprite = monster.Base.Sprite;
 
+        // to reset the enemy
+        image.color = originalColor;
         PlayEnterAnimation();
-        //image.color = originalColor;
     }
 
     public void PlayEnterAnimation()

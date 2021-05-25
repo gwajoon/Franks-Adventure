@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public event Action OnEncountered;
     private Vector2 input;
     private Character character;
+
+    public event Action OnEncountered;
 
     private void Awake()
     {
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour
        var collider = Physics2D.OverlapCircle(interactPosition, 0.3f, GameLayers.i.InteractableLayer);
        if (collider != null) 
        {
-           collider.GetComponent<Interactable>()?.Interact();
+           collider.GetComponent<Interactable>()?.Interact(transform);
        }
     }  
 
