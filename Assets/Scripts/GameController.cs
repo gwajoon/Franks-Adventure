@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         playerController.OnEncountered += StartBattle;
-        //battleSystem.OnBattleOver += EndBattle;
+        battleSystem.OnBattleOver += EndBattle;
 
         DialogueManager.Instance.OnShowDialogue += () => 
         {
@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
         //disable main camera
         worldCamera.gameObject.SetActive(false);
 
-        battleSystem.Start();
+        battleSystem.StartBattle();
     }
 
     void EndBattle(bool won)

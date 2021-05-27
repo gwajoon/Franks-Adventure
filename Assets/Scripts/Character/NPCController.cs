@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum NPCState { Idle, Walking }
+public enum NPCState { Idle, Walking, Dialogue }
 
 public class NPCController : MonoBehaviour, Interactable
 {
@@ -22,16 +22,24 @@ public class NPCController : MonoBehaviour, Interactable
        character = GetComponent<Character>();
    }
 
-    public void Interact() {
+    // transform that initiate the interaction
+    public void Interact(Transform initiator) {
         if (state == NPCState.Idle)
-            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue));
+        {
+            state = NPCState.Dialogue;
+            character.LookTowards(initiator.position);
+
+            // NPC state to go back to idle once dialogue is over
+            StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue, () => {
+                idleTimer = 0f;
+                state = NPCState.Idle;
+            }));
+        }
    }
 
    private void Update()
    {
-       if (DialogueManager.Instance.isShowing) 
-            return;
-
+       // only runs when  NPC is idle so NPC that is talked to will stop moving
        if (state == NPCState.Idle)
        {
            idleTimer += Time.deltaTime;
@@ -49,8 +57,17 @@ public class NPCController : MonoBehaviour, Interactable
    IEnumerator Walk()
    {
         state = NPCState.Walking;
+
+        var oldPosition = transform.position;
+
         yield return character.Move(movementPattern[currentPattern]);
-        currentPattern = (currentPattern + 1) % movementPattern.Count;
+
+        // check if the current position = previous position
+        // if equals means the character did not move and is currently blocked by player, 
+        // so it should not execute the next pattern of walking until it finishes this pattern first
+        if (transform.position != oldPosition)
+            currentPattern = (currentPattern + 1) % movementPattern.Count;
+
         state = NPCState.Idle;
    }
 }

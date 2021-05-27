@@ -14,18 +14,18 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHud EnemyHud;
     [SerializeField] BattleDialogueBox dialogueBox;
 
+    public event Action<bool> OnBattleOver;
+
     BattleState state;
     int currentAction;
     int currentAnswer;
 
     int currentQuestion;
 
-    public void Start() 
+    public void StartBattle() 
     {
         StartCoroutine(SetupBattle());
     }
-
-    //  public event Action<bool> OnBattleOver;
 
     public IEnumerator SetupBattle()
     {
@@ -76,6 +76,9 @@ public class BattleSystem : MonoBehaviour
             {
                 yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.Name} fainted.");
                 EnemyUnit.PlayFaintAnimation();
+
+                yield return new WaitForSeconds(1f);
+                OnBattleOver(true);
             }
             else
             {
@@ -101,6 +104,9 @@ public class BattleSystem : MonoBehaviour
             {
                 yield return dialogueBox.TypeDialogue($"Frank fainted.");
                 FrankUnit.PlayFaintAnimation();
+
+                yield return new WaitForSeconds(1f);
+                OnBattleOver(false);
             }
             else
             {
