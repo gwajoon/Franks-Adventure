@@ -66,7 +66,7 @@ public class BattleSystem : MonoBehaviour
         if (answer == EnemyUnit.monster.Base.Question(currentQuestion).CorrectAnswer) 
         {
             FrankUnit.PlayAttackAnimation();
-            yield return new WaitForSeconds(0.7f);
+            yield return new WaitForSeconds(1f);
             EnemyUnit.PlayHitAnimation();
 
             bool isFainted = EnemyUnit.monster.TakeDamage(answer, FrankUnit.monster);
@@ -91,10 +91,10 @@ public class BattleSystem : MonoBehaviour
         else
         {
             yield return dialogueBox.TypeDialogue("Wrong answer!");
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
 
             EnemyUnit.PlayAttackAnimation();
-            yield return new WaitForSeconds(0.7f);
+            yield return new WaitForSeconds(1f);
             FrankUnit.PlayHitAnimation();
 
             bool isFainted = FrankUnit.monster.TakeDamage(answer, EnemyUnit.monster);
@@ -159,7 +159,7 @@ public class BattleSystem : MonoBehaviour
 
         dialogueBox.UpdateActionSelection(currentAction);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             if (currentAction == 0)
             {
