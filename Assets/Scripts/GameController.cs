@@ -14,10 +14,28 @@ public class GameController : MonoBehaviour
 
     GameState state;
 
+    public static GameController Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         playerController.OnEncountered += StartBattle;
         battleSystem.OnBattleOver += EndBattle;
+
+        playerController.OnEnterTrainerView += (Collider2D trainerCollider) => 
+        {
+            // component is in fov
+            var trainer = trainerCollider.GetComponentInParent<TrainerController>();
+            if (trainer != null)
+            {
+                state = GameState.Dialogue;
+                StartCoroutine(trainer.TriggerTrainerBattle(playerController));
+            }
+        };
 
         DialogueManager.Instance.OnShowDialogue += () => 
         {
@@ -41,11 +59,31 @@ public class GameController : MonoBehaviour
         //disable main camera
         worldCamera.gameObject.SetActive(false);
 
-        battleSystem.StartBattle();
+        Monster Frank = playerController.GetComponent<Monster>();
+        Monster wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildMonster();
+
+        battleSystem.StartBattle(Frank, wildMonster);
     }
 
+    TrainerController trainer;
+    public void StartTrainerBattle(TrainerController trainer)
+    {
+        state = GameState.Battle;
+        battleSystem.gameObject.SetActive(true);
+        worldCamera.gameObject.SetActive(false);
+
+        this.trainer = trainer;
+        battleSystem.StartTrainerBattle(trainer);
+    }
+    
     void EndBattle(bool won)
     {
+        if (trainer != null && won == true)
+        {
+            trainer.BattleLost();
+            trainer = null;
+        }
+
         state = GameState.FreeRoam;
         battleSystem.gameObject.SetActive(false);
         worldCamera.gameObject.SetActive(true);

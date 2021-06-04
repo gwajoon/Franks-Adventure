@@ -6,8 +6,11 @@ using DG.Tweening;
 
 public class BattleUnit : MonoBehaviour
 {
-    [SerializeField] MonsterBase _base;
-    [SerializeField] int level;
+    [SerializeField] BattleHud hud;
+
+    public BattleHud Hud {
+        get { return hud; }
+    }
 
     public Monster monster { get; set; }
 
@@ -23,19 +26,25 @@ public class BattleUnit : MonoBehaviour
         originalColor = image.color;
     }
 
-    public void Setup()
+    public void Setup(Monster monster)
     {
-        monster = new Monster(_base, level);
         image.sprite = monster.Base.Sprite;
+
+        hud.setData(monster); 
 
         // to reset the enemy
         image.color = originalColor;
         PlayEnterAnimation();
     }
 
+    public void Clear()
+    {
+        hud.gameObject.SetActive(false);
+    }
+
     public void PlayEnterAnimation()
     {
-        if (_base.name == "Frank")
+        if (monster.Base.name == "Frank")
             image.transform.localPosition = new Vector3(-500f, originalPos.y);
         else
             image.transform.localPosition = new Vector3(500f, originalPos.y);
@@ -46,7 +55,7 @@ public class BattleUnit : MonoBehaviour
     public void PlayAttackAnimation()
     {
         var sequence = DOTween.Sequence();
-        if (_base.name == "Frank")
+        if (monster.Base.name == "Frank")
             sequence.Append(image.transform.DOLocalMoveX(originalPos.x + 50f, 0.25f));
         else
             sequence.Append(image.transform.DOLocalMoveX(originalPos.x - 50f, 0.25f));

@@ -5,14 +5,22 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] Monster Frank;
+
     private Vector2 input;
     private Character character;
 
     public event Action OnEncountered;
+    public event Action<Collider2D> OnEnterTrainerView;   
 
     private void Awake()
     {
         character = GetComponent<Character>();
+    }
+
+    private void Start()
+    {
+        Frank.Init();
     }
 
     public void HandleUpdate()
@@ -27,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                StartCoroutine(character.Move(input, checkForEncounters));
+                StartCoroutine(character.Move(input, onMoveOver));
             }
         }
 
@@ -50,6 +58,35 @@ public class PlayerController : MonoBehaviour
            collider.GetComponent<Interactable>()?.Interact(transform);
        }
     }  
+
+    private void onMoveOver()
+    {
+        // // return an array which represents all the game objects which player overlaps with
+        // var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayer);
+    
+        // foreach (var collider in colliders)
+        // {
+        //     var triggerable = collider.GetComponent<IPlayerTriggerable>();
+        //     // get all colliders with triggerable interface
+        //     if (triggerable != null)
+        //     {
+        //         triggerable.onPlayerTriggered(this);
+        //         break;
+        //     }
+        // }
+        checkForEncounters();
+        checkTrainerView();
+    }
+
+    private void checkTrainerView()
+    {
+        var trainer = Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.FOVLayer);
+        if (trainer != null)
+        {
+            character.Animator.IsMoving = false;
+            OnEnterTrainerView?.Invoke(trainer);
+        }
+    }
 
     // random encounters with monsters in the wild
     private void checkForEncounters()

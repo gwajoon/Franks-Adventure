@@ -4,60 +4,79 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // busy state is when player/enemy are attacking
-public enum BattleState { Start, PlayerAction, PlayerAnswer, EnemyQuestion, Busy }
+public enum BattleState { Start, ActionSelection, AnswerSelection, PerformMove, Busy }
 
 public class BattleSystem : MonoBehaviour
 {
-    [SerializeField] BattleUnit FrankUnit;
+    [SerializeField] BattleUnit PlayerUnit;
     [SerializeField] BattleUnit EnemyUnit;
-    [SerializeField] BattleHud FrankHud;
-    [SerializeField] BattleHud EnemyHud;
     [SerializeField] BattleDialogueBox dialogueBox;
-
+ 
     public event Action<bool> OnBattleOver;
 
     BattleState state;
     int currentAction;
     int currentAnswer;
-
     int currentQuestion;
 
-    public void StartBattle() 
+    bool isTrainerBattle = false;
+
+    Monster Frank;
+
+    Monster wildMonster;
+
+    public void StartBattle(Monster Frank, Monster wildMonster) 
     {
+        this.Frank = Frank;
+        this.wildMonster = wildMonster;
+        StartCoroutine(SetupBattle());
+    }
+
+    public void StartTrainerBattle(TrainerController trainer) 
+    {
+        isTrainerBattle = true;
         StartCoroutine(SetupBattle());
     }
 
     public IEnumerator SetupBattle()
     {
-        FrankUnit.Setup();
-        EnemyUnit.Setup();
-        FrankHud.setData(FrankUnit.monster);
-        EnemyHud.setData(EnemyUnit.monster);
+            // playerUnit.Clear();
+            // EnemyUnit.Clear();
 
-        yield return dialogueBox.TypeDialogue($"A wild {EnemyUnit.monster.Base.name} appeared.");
-        yield return new WaitForSeconds(1f);
-        
+            PlayerUnit.Setup(Frank);
+            EnemyUnit.Setup(wildMonster);
+
+        if (!isTrainerBattle)
+        {
+            yield return dialogueBox.TypeDialogue($"A wild {EnemyUnit.monster.Base.name} appeared.");
+            yield return new WaitForSeconds(1f); 
+        } else
+        {
+            yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.name} has challenged you to a knowledge battle.");
+            yield return new WaitForSeconds(1f);
+
+        }
         StartCoroutine(EnemyQuestion());
     }
 
-    void PlayerAction()
+    void ActionSelection()
     {
-        state = BattleState.PlayerAction;
+        state = BattleState.ActionSelection;
         dialogueBox.setDialogue($"{EnemyUnit.monster.Base.QuestionName(currentQuestion)}?");
         dialogueBox.EnableActionSelector(true);
     }
 
-    void PlayerAnswer()
+    void AnswerSelection()
     {
-        state = BattleState.PlayerAnswer;
+        state = BattleState.AnswerSelection;
         dialogueBox.EnableActionSelector(false);
         dialogueBox.EnableDialogueText(false);
         dialogueBox.EnableAnswerSelector(true);
     }
 
-    IEnumerator PerformPlayerMove()
+    IEnumerator PlayerMove()
     {
-        state = BattleState.Busy;
+        state = BattleState.PerformMove;
 
         var answer = EnemyUnit.monster.Base.Question(currentQuestion).Answers[currentAnswer].Name;
         yield return dialogueBox.TypeDialogue($"Frank answered {answer}.");
@@ -65,12 +84,12 @@ public class BattleSystem : MonoBehaviour
         
         if (answer == EnemyUnit.monster.Base.Question(currentQuestion).CorrectAnswer) 
         {
-            FrankUnit.PlayAttackAnimation();
+            PlayerUnit.PlayAttackAnimation();
             yield return new WaitForSeconds(0.7f);
             EnemyUnit.PlayHitAnimation();
 
-            bool isFainted = EnemyUnit.monster.TakeDamage(answer, FrankUnit.monster);
-            yield return EnemyHud.UpdateHP();
+            bool isFainted = EnemyUnit.monster.TakeDamage(answer, PlayerUnit.monster);
+            yield return EnemyUnit.Hud.UpdateHP();
 
             if (isFainted)
             {
@@ -95,15 +114,15 @@ public class BattleSystem : MonoBehaviour
 
             EnemyUnit.PlayAttackAnimation();
             yield return new WaitForSeconds(0.7f);
-            FrankUnit.PlayHitAnimation();
+            PlayerUnit.PlayHitAnimation();
 
-            bool isFainted = FrankUnit.monster.TakeDamage(answer, EnemyUnit.monster);
-            yield return FrankHud.UpdateHP();
+            bool isFainted = PlayerUnit.monster.TakeDamage(answer, EnemyUnit.monster);
+            yield return PlayerUnit.Hud.UpdateHP();
 
             if (isFainted)
             {
                 yield return dialogueBox.TypeDialogue($"Frank fainted.");
-                FrankUnit.PlayFaintAnimation();
+                PlayerUnit.PlayFaintAnimation();
 
                 yield return new WaitForSeconds(1f);
                 OnBattleOver(false);
@@ -120,7 +139,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator EnemyQuestion()
     {
-        state = BattleState.EnemyQuestion;
+        state = BattleState.PerformMove;
         dialogueBox.SetAnswerNames(EnemyUnit.monster.Base.Question(currentQuestion));
         yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.name} has a menacing question!");
         yield return new WaitForSeconds(1f);
@@ -128,16 +147,16 @@ public class BattleSystem : MonoBehaviour
         yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.QuestionName(currentQuestion)}?");
         yield return new WaitForSeconds(2f);
 
-        PlayerAction();
+        ActionSelection();
     }
 
     private void Update()
     {
-        if (state == BattleState.PlayerAction)
+        if (state == BattleState.ActionSelection)
         {
             HandleActionSelection();
         }
-        else if (state == BattleState.PlayerAnswer)
+        else if (state == BattleState.AnswerSelection)
         {
             HandleAnswerSelection();
         }
@@ -164,7 +183,7 @@ public class BattleSystem : MonoBehaviour
             if (currentAction == 0)
             {
                 // Fight
-                PlayerAnswer();
+                AnswerSelection();
             }
             else if (currentAction == 1) 
             {
@@ -200,11 +219,11 @@ public class BattleSystem : MonoBehaviour
         {
             dialogueBox.EnableAnswerSelector(false);
             dialogueBox.EnableDialogueText(true);
-            StartCoroutine(PerformPlayerMove());
+            StartCoroutine(PlayerMove());
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            PlayerAction();
+            ActionSelection();
         }
 
         dialogueBox.UpdateAnswerSelection(currentAnswer);
