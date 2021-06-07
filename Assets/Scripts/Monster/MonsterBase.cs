@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class MonsterBase : ScriptableObject
 {
-    [SerializeField] new string name;
+    [SerializeField] string name;
 
     [TextArea]
     [SerializeField] string description;
@@ -16,13 +16,9 @@ public class MonsterBase : ScriptableObject
 
     [SerializeField] Sprite sprite;
 
-    [SerializeField] MonsterType type1;
-
     //Base Stats
     [SerializeField] int maxHp;
     [SerializeField] int attack;
-    [SerializeField] int defense;
-    [SerializeField] int speed;
 
     public string Name {
         get { return name; }
@@ -40,13 +36,6 @@ public class MonsterBase : ScriptableObject
         get { return attack; }
     }
 
-    public int Defense {
-        get { return defense; }
-    }
-
-    public int Speed {
-        get { return speed; }
-    }
 
     public Sprite Sprite {
         get { return sprite; }
@@ -63,12 +52,4 @@ public class MonsterBase : ScriptableObject
     public int QuestionCount {
         get { return questions.Count; }
     }
-}
-
-public enum MonsterType
-{
-    None,
-    Recursion,
-    ForLoop,
-    WhileLoop
 }

@@ -6,11 +6,9 @@ public class TrainerController : MonoBehaviour, Interactable
 {
     [SerializeField] Dialogue dialogue;
     [SerializeField] Dialogue dialogueAfterBattle;
-    [SerializeField] MonsterBase monster;
+    [SerializeField] Monster monster;
     [SerializeField] GameObject exclamation;
     [SerializeField] GameObject FOV;
-
-    
 
     // state of trainer
     bool battleLost;
@@ -83,5 +81,10 @@ public class TrainerController : MonoBehaviour, Interactable
 
         // set FOV of NPCs according to direction they face
         FOV.transform.eulerAngles = new Vector3(0f, 0f, angle);
+    }
+
+    public Monster Monster
+    {
+       get { return monster; }
     }
 }

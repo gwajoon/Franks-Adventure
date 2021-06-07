@@ -21,8 +21,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78af6ffc98d5d4f76addefb09481845d, type: 2}
   - {fileID: 11400000, guid: d9880d072a1974f78b6a9f821f6724b6, type: 2}
   sprite: {fileID: 7456334905099763947, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
-  type1: 1
   maxHp: 2
   attack: 25
-  defense: 5
-  speed: 69

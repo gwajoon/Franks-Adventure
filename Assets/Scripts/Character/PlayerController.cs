@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] Monster Frank;
 
+    const float offsetY = 0.3f; 
     private Vector2 input;
     private Character character;
 
-    public event Action OnEncountered;
-    public event Action<Collider2D> OnEnterTrainerView;   
+    public Monster getMonster
+    {
+        get => Frank;
+    }
 
     private void Awake()
     {
@@ -35,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                StartCoroutine(character.Move(input, onMoveOver));
+                StartCoroutine(character.Move(input, OnMoveOver));
             }
         }
 
@@ -59,44 +62,20 @@ public class PlayerController : MonoBehaviour
        }
     }  
 
-    private void onMoveOver()
+    private void OnMoveOver()
     {
-        // // return an array which represents all the game objects which player overlaps with
-        // var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayer);
+        // return an array which represents all the game objects which player overlaps with
+        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayer);
     
-        // foreach (var collider in colliders)
-        // {
-        //     var triggerable = collider.GetComponent<IPlayerTriggerable>();
-        //     // get all colliders with triggerable interface
-        //     if (triggerable != null)
-        //     {
-        //         triggerable.onPlayerTriggered(this);
-        //         break;
-        //     }
-        // }
-        checkForEncounters();
-        checkTrainerView();
-    }
-
-    private void checkTrainerView()
-    {
-        var trainer = Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.FOVLayer);
-        if (trainer != null)
+        foreach (var collider in colliders)
         {
-            character.Animator.IsMoving = false;
-            OnEnterTrainerView?.Invoke(trainer);
-        }
-    }
-
-    // random encounters with monsters in the wild
-    private void checkForEncounters()
-    {
-        if (Physics2D.OverlapCircle(transform.position, 0.2f, GameLayers.i.GrassLayer) != null)
-        {
-            if (UnityEngine.Random.Range(1, 101) <= 10)
+            var triggerable = collider.GetComponent<IPlayerTriggerable>();
+            // get all colliders with triggerable interface
+            if (triggerable != null)
             {
                 character.Animator.IsMoving = false;
-                OnEncountered();
+                triggerable.OnPlayerTriggered(this);          
+                break;
             }
         }
     }

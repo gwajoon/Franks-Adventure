@@ -32,17 +32,16 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
-    public void StartTrainerBattle(TrainerController trainer) 
+    public void StartTrainerBattle(Monster Frank, TrainerController trainer) 
     {
         isTrainerBattle = true;
+        this.Frank = Frank;
+        this.wildMonster = trainer.Monster;
         StartCoroutine(SetupBattle());
     }
 
     public IEnumerator SetupBattle()
     {
-            // playerUnit.Clear();
-            // EnemyUnit.Clear();
-
             PlayerUnit.Setup(Frank);
             EnemyUnit.Setup(wildMonster);
 

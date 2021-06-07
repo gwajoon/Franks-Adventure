@@ -23,19 +23,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        playerController.OnEncountered += StartBattle;
         battleSystem.OnBattleOver += EndBattle;
-
-        playerController.OnEnterTrainerView += (Collider2D trainerCollider) => 
-        {
-            // component is in fov
-            var trainer = trainerCollider.GetComponentInParent<TrainerController>();
-            if (trainer != null)
-            {
-                state = GameState.Dialogue;
-                StartCoroutine(trainer.TriggerTrainerBattle(playerController));
-            }
-        };
 
         DialogueManager.Instance.OnShowDialogue += () => 
         {
@@ -49,7 +37,7 @@ public class GameController : MonoBehaviour
         };
     }
 
-    void StartBattle()
+    public void StartBattle()
     {
         state = GameState.Battle;
 
@@ -59,13 +47,14 @@ public class GameController : MonoBehaviour
         //disable main camera
         worldCamera.gameObject.SetActive(false);
 
-        Monster Frank = playerController.GetComponent<Monster>();
+        Monster Frank = playerController.getMonster;
         Monster wildMonster = FindObjectOfType<MapArea>().GetComponent<MapArea>().GetRandomWildMonster();
 
         battleSystem.StartBattle(Frank, wildMonster);
     }
 
     TrainerController trainer;
+    
     public void StartTrainerBattle(TrainerController trainer)
     {
         state = GameState.Battle;
@@ -73,9 +62,16 @@ public class GameController : MonoBehaviour
         worldCamera.gameObject.SetActive(false);
 
         this.trainer = trainer;
-        battleSystem.StartTrainerBattle(trainer);
+        Monster Frank = playerController.getMonster;
+        battleSystem.StartTrainerBattle(Frank, trainer);
     }
-    
+
+    public void OnEnterTrainerView(TrainerController trainer)
+    {
+        state = GameState.Dialogue;
+        StartCoroutine(trainer.TriggerTrainerBattle(playerController));
+    }
+
     void EndBattle(bool won)
     {
         if (trainer != null && won == true)

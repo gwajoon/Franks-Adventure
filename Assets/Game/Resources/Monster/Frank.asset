@@ -18,8 +18,5 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   sprite: {fileID: -4445699719359273135, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
-  type1: 0
-  maxHp: 10
-  attack: 500
-  defense: 20
-  speed: 20
+  maxHp: 5
+  attack: 100

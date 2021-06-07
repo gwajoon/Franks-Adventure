@@ -26,11 +26,12 @@ public class BattleUnit : MonoBehaviour
         originalColor = image.color;
     }
 
-    public void Setup(Monster monster)
+    public void Setup(Monster Monster)
     {
+        monster = Monster;
         image.sprite = monster.Base.Sprite;
 
-        hud.setData(monster); 
+        hud.setData(Monster); 
 
         // to reset the enemy
         image.color = originalColor;
@@ -42,9 +43,14 @@ public class BattleUnit : MonoBehaviour
         hud.gameObject.SetActive(false);
     }
 
+    public void Unclear()
+    {
+        hud.gameObject.SetActive(true);
+    }
+
     public void PlayEnterAnimation()
     {
-        if (monster.Base.name == "Frank")
+        if (monster.Base.Name == "Frank")
             image.transform.localPosition = new Vector3(-500f, originalPos.y);
         else
             image.transform.localPosition = new Vector3(500f, originalPos.y);
