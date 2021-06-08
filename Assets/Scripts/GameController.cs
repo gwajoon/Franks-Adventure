@@ -4,7 +4,7 @@ using UnityEngine;
 
 // States of game displayed on the screen
 // FreeRoam is when we control Frank on the map, Battle is when Frank engages in battle
-public enum GameState { FreeRoam, Battle, Dialogue }
+public enum GameState { FreeRoam, Battle, Dialogue , Paused }
 
 public class GameController : MonoBehaviour
 {
@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     [SerializeField] Camera worldCamera;
 
     GameState state;
+
+    GameState stateBeforePause;
 
     public static GameController Instance { get; private set; }
 
@@ -35,6 +37,19 @@ public class GameController : MonoBehaviour
             if (state == GameState.Dialogue)
                 state = GameState.FreeRoam;
         };
+    }
+
+    public void PauseGame(bool pause)
+    {
+        if (pause)
+        {
+            stateBeforePause = state;
+            state = GameState.Paused;
+        }
+        else
+        {
+            state = stateBeforePause;
+        }
     }
 
     public void StartBattle()
