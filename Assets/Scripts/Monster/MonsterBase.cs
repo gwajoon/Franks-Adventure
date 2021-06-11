@@ -36,17 +36,16 @@ public class MonsterBase : ScriptableObject
         get { return attack; }
     }
 
-
     public Sprite Sprite {
         get { return sprite; }
     }
 
-    public QuestionBase Question(int index) {
-        return questions[index];
-    }
-
     public string QuestionName(int index) {
         return questions[index].name;
+    }
+
+    public List<QuestionBase> Questions {
+        get { return questions;}
     }
 
     public int QuestionCount {

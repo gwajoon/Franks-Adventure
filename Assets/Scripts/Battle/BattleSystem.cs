@@ -19,6 +19,8 @@ public class BattleSystem : MonoBehaviour
     int currentAnswer;
     int currentQuestion;
 
+    List<QuestionBase> questions;
+
     bool isTrainerBattle = false;
 
     Monster Frank;
@@ -30,6 +32,7 @@ public class BattleSystem : MonoBehaviour
         this.Frank = Frank;
         this.wildMonster = wildMonster;
         StartCoroutine(SetupBattle());
+        questions = EnemyUnit.monster.Base.Questions;
     }
 
     public void StartTrainerBattle(Monster Frank, TrainerController trainer) 
@@ -77,11 +80,11 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.PerformMove;
 
-        var answer = EnemyUnit.monster.Base.Question(currentQuestion).Answers[currentAnswer].Name;
+        var answer = questions[currentQuestion].Answers[currentAnswer].Name;
         yield return dialogueBox.TypeDialogue($"Frank answered {answer}.");
         yield return new WaitForSeconds(0.5f);
         
-        if (answer == EnemyUnit.monster.Base.Question(currentQuestion).CorrectAnswer) 
+        if (answer == questions[currentQuestion].CorrectAnswer) 
         {
             PlayerUnit.PlayAttackAnimation();
             yield return new WaitForSeconds(0.7f);
@@ -89,6 +92,9 @@ public class BattleSystem : MonoBehaviour
 
             bool isFainted = EnemyUnit.monster.TakeDamage(answer, PlayerUnit.monster);
             yield return EnemyUnit.Hud.UpdateHP();
+
+            questions[currentQuestion].answered = true;
+            Console.WriteLine(questions[currentQuestion].Answered.ToString());
 
             if (isFainted)
             {
@@ -100,9 +106,14 @@ public class BattleSystem : MonoBehaviour
             }
             else
             {
-                if (currentQuestion++ == EnemyUnit.monster.Base.QuestionCount - 1) {
-                    currentQuestion = 0;
-                } 
+                if (currentQuestion++ == EnemyUnit.monster.Base.QuestionCount - 1){
+                        currentQuestion = 0;
+                        
+                    }
+                while (questions[currentQuestion].Answered == true) {
+                    currentQuestion++;                    
+                }
+
                 yield return EnemyQuestion();
             }
         }
@@ -131,6 +142,9 @@ public class BattleSystem : MonoBehaviour
                 if (currentQuestion++ == EnemyUnit.monster.Base.QuestionCount - 1) {
                     currentQuestion = 0;
                 } 
+                while (questions[currentQuestion].Answered == true) {
+                    currentQuestion++;
+                }
                 yield return EnemyQuestion();
             }
         }
@@ -139,7 +153,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyQuestion()
     {
         state = BattleState.PerformMove;
-        dialogueBox.SetAnswerNames(EnemyUnit.monster.Base.Question(currentQuestion));
+        dialogueBox.SetAnswerNames(questions[currentQuestion]);
         yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.name} has a menacing question!");
         yield return new WaitForSeconds(1f);
 

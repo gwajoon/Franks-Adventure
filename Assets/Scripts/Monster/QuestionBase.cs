@@ -11,6 +11,7 @@ public class QuestionBase : ScriptableObject
     [SerializeField] List<AnswerBase> answers;
     [SerializeField] AnswerBase correctAnswer;
 
+    public bool answered = false;
     public string Name {
         get { return name; }
     }
@@ -26,5 +27,14 @@ public class QuestionBase : ScriptableObject
     public string CorrectAnswer
     {
         get { return correctAnswer.Name; }
+    }
+
+    public bool Answered {
+        get { return answered; }
+    }
+
+    public void setAnswered()
+    {
+        answered = true;
     }
 }
