@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: An error, or mistake, in a program that prevents the program from being
+    run correctly
+  m_EditorClassIdentifier: 
+  name: What is the term forl an error, or mistake, in a program that prevents the
+    program from being run correctly.
+  explanation: 
+  answers:
+  - {fileID: 11400000, guid: c8bd7cd66fe874f46ba3b42e5fcefb07, type: 2}
+  - {fileID: 11400000, guid: 626b7ba305a8a4fe1b3e9caad81d6ea1, type: 2}
+  - {fileID: 11400000, guid: 610e4771a8e6d48ffb280067c4069735, type: 2}
+  - {fileID: 11400000, guid: 2dfedb02df9104ccaae833123e292f6b, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 2dfedb02df9104ccaae833123e292f6b, type: 2}
+  answered: 0

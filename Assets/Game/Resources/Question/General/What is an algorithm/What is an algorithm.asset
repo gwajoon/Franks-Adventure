@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: What is an algorithm
+  m_EditorClassIdentifier: 
+  name: What is an algorithm
+  explanation: 
+  answers:
+  - {fileID: 11400000, guid: 3f1432d783486431c80d3a0e72b491a1, type: 2}
+  - {fileID: 11400000, guid: 14fa1c603d5814df8999e4cabe80fd98, type: 2}
+  - {fileID: 11400000, guid: 88cd2ca1964e34f4fbe0bdc0062dd91c, type: 2}
+  - {fileID: 11400000, guid: 00b81e40acb194a2492c8b51d99eef9f, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 88cd2ca1964e34f4fbe0bdc0062dd91c, type: 2}
+  answered: 0

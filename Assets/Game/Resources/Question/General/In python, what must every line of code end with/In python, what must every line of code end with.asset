@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: In python, what must every line of code end with
+  m_EditorClassIdentifier: 
+  name: In python, what must every line of code end with?
+  explanation: 
+  answers:
+  - {fileID: 11400000, guid: ea3cb9f8afd824bce977ae626d742e10, type: 2}
+  - {fileID: 11400000, guid: 2a283616339b8438db50b77f459d255d, type: 2}
+  - {fileID: 11400000, guid: 0e52b26006dd1471ebbf3902793eddf2, type: 2}
+  - {fileID: 11400000, guid: a99de0c2008374beda20f5a6bb76c9af, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 0e52b26006dd1471ebbf3902793eddf2, type: 2}
+  answered: 0

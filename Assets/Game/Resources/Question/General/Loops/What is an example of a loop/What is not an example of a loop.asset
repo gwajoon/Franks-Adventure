@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: What is not an example of a loop
+  m_EditorClassIdentifier: 
+  name: What is not an example of a loop
+  explanation: 
+  answers:
+  - {fileID: 11400000, guid: 0992f1149af8d454aaa3f9adda31a028, type: 2}
+  - {fileID: 11400000, guid: 1c550a419454745a4bbe69b4583356d8, type: 2}
+  - {fileID: 11400000, guid: 29d69ad0fad8149dba662096d113f767, type: 2}
+  - {fileID: 11400000, guid: 46efcc0c90e2d4a2ba7bf74b11da20fd, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 1c550a419454745a4bbe69b4583356d8, type: 2}
+  answered: 0
