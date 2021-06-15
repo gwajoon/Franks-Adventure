@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Which of the following is an Integer
   m_EditorClassIdentifier: 
   name: Which of the following is an integer?
-  explanation: 
+  explanation: An integer is a whole number! For example 1, 25, 888 are  integers,
+    while decimals like 25.0 or 1.23 are not integers!
   answers:
   - {fileID: 11400000, guid: 4ff2d06ec09b04193874c002e493d262, type: 2}
   - {fileID: 11400000, guid: 540494a20169f4b1daf9a8f8986f6227, type: 2}
   - {fileID: 11400000, guid: ca96af37cc58448ec935e2c6854c77c6, type: 2}
   - {fileID: 11400000, guid: 9f1984f859c8d4eab891eb7010a8aa02, type: 2}
   correctAnswer: {fileID: 11400000, guid: 540494a20169f4b1daf9a8f8986f6227, type: 2}
+  answered: 0

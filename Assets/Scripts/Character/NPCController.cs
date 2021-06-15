@@ -14,7 +14,6 @@ public class NPCController : MonoBehaviour, Interactable
     float idleTimer = 0f; 
     int currentPattern = 0;
 
-
     Character character;
    
    private void Awake()

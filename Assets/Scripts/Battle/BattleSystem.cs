@@ -126,6 +126,8 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(0.7f);
             PlayerUnit.PlayHitAnimation();
 
+            yield return dialogueBox.TypeDialogue(questions[currentQuestion].Explanation);
+
             bool isFainted = PlayerUnit.monster.TakeDamage(answer, EnemyUnit.monster);
             yield return PlayerUnit.Hud.UpdateHP();
 
