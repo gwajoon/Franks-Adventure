@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Object : MonoBehaviour
+public class Object : MonoBehaviour, Interactable
 {
-    SpriteRenderer spriteRenderer;
-    void Start()
-    {
-    spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    [SerializeField] Dialogue dialogue;
+    [SerializeField] Sprite image;
 
+    public void Interact(Transform initiator) {
+        // Show text when player interact with object
+        StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue, image));
+   }
 }

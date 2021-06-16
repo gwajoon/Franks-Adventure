@@ -54,13 +54,17 @@ public class PlayerController : MonoBehaviour
         var facingDirection = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
         var interactPosition = transform.position + facingDirection;
 
-       // Debug.DrawLine(transform.position, interactPosition, Color.green, 0.5f);
+        var collider = Physics2D.OverlapCircle(interactPosition, 0.3f, GameLayers.i.InteractableLayer);
+        if (collider != null) 
+        {
+            collider.GetComponent<Interactable>()?.Interact(transform);
+        }
 
-       var collider = Physics2D.OverlapCircle(interactPosition, 0.3f, GameLayers.i.InteractableLayer);
-       if (collider != null) 
-       {
-           collider.GetComponent<Interactable>()?.Interact(transform);
-       }
+        var collider2 = Physics2D.OverlapCircle(interactPosition, 0.3f, GameLayers.i.ObjectLayer);
+        if (collider2 != null) 
+        {
+            collider2.GetComponent<Interactable>()?.Interact(transform);
+        }
     }  
 
     private void OnMoveOver()

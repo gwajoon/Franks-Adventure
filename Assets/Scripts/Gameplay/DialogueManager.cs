@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject dialogueBox;
     [SerializeField] Text dialogueText;
     [SerializeField] int lettersPerSecond;
+    [SerializeField] GameObject imageBox;
 
     public event Action OnShowDialogue;
     public event Action onCloseDialogue;
@@ -21,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     }
 
     Dialogue dialogue;
+    Sprite image;
+    
     Action onDialogueFinished;
 
     int currentLine = 0;
@@ -42,6 +45,24 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeDialogue(dialogue.Lines[0]));
     }
 
+    public IEnumerator ShowDialogue(Dialogue dialogue, Sprite image, Action onFinished=null)
+    {
+        yield return new WaitForEndOfFrame();
+
+        OnShowDialogue?.Invoke();
+
+        isShowing = true;
+        this.dialogue = dialogue;
+        onDialogueFinished = onFinished;
+
+        this.image = image;
+        imageBox.GetComponent<Image>().sprite = image;
+
+        dialogueBox.SetActive(true);
+        imageBox.SetActive(true);
+        StartCoroutine(TypeDialogue(dialogue.Lines[0]));
+    }
+
     public void HandleUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !isTyping)
@@ -56,6 +77,7 @@ public class DialogueManager : MonoBehaviour
                 currentLine = 0;
                 isShowing = false;
                 dialogueBox.SetActive(false);
+                imageBox.SetActive(false);
                 onDialogueFinished?.Invoke();
                 onCloseDialogue?.Invoke();
             }
