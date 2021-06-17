@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boulder1
+  - Boulder2
+  - Boulder3
+  - Boulder4
+  - Boulder5
   layers:
   - Default
   - TransparentFX

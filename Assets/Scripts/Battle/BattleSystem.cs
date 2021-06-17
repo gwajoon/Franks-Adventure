@@ -17,7 +17,7 @@ public class BattleSystem : MonoBehaviour
     BattleState state;
     int currentAction;
     int currentAnswer;
-    int currentQuestion;
+    int currentQuestion = 0;
 
     List<QuestionBase> questions;
 
@@ -31,22 +31,24 @@ public class BattleSystem : MonoBehaviour
     {
         this.Frank = Frank;
         this.wildMonster = wildMonster;
+        questions = wildMonster.Base.Questions;
         StartCoroutine(SetupBattle());
-        questions = EnemyUnit.monster.Base.Questions;
     }
 
     public void StartTrainerBattle(Monster Frank, TrainerController trainer) 
     {
         isTrainerBattle = true;
         this.Frank = Frank;
-        this.wildMonster = trainer.Monster;
+        wildMonster = trainer.Monster;
+        wildMonster.Init();
+        questions = wildMonster.Base.Questions;
         StartCoroutine(SetupBattle());
     }
 
     public IEnumerator SetupBattle()
     {
-            PlayerUnit.Setup(Frank);
-            EnemyUnit.Setup(wildMonster);
+        PlayerUnit.Setup(Frank);
+        EnemyUnit.Setup(wildMonster);
 
         if (!isTrainerBattle)
         {
@@ -56,7 +58,6 @@ public class BattleSystem : MonoBehaviour
         {
             yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.name} has challenged you to a knowledge battle.");
             yield return new WaitForSeconds(1f);
-
         }
         StartCoroutine(EnemyQuestion());
     }
@@ -94,29 +95,36 @@ public class BattleSystem : MonoBehaviour
             yield return EnemyUnit.Hud.UpdateHP();
 
             questions[currentQuestion].answered = true;
-            Console.WriteLine(questions[currentQuestion].Answered.ToString());
 
             if (isFainted)
             {
                 yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.Name} fainted.");
                 EnemyUnit.PlayFaintAnimation();
 
+                if (isTrainerBattle) {
+                    yield return dialogueBox.TypeDialogue($"You have defeated {EnemyUnit.monster.Base.Name}");
+                }
                 yield return new WaitForSeconds(1f);
+
                 OnBattleOver(true);
+                
+                foreach (QuestionBase q in questions) {
+                    q.answered = false;
+                }
             }
             else
-            {
-                if (currentQuestion++ == EnemyUnit.monster.Base.QuestionCount - 1){
-                        currentQuestion = 0;
-                        
-                    }
+            { 
                 while (questions[currentQuestion].Answered == true) {
-                    currentQuestion++;                    
+                    currentQuestion++;    
+                    if (currentQuestion == EnemyUnit.monster.Base.QuestionCount) {
+                    currentQuestion = 0;                
+                    }
                 }
 
                 yield return EnemyQuestion();
             }
         }
+        // wrong answer
         else
         {
             yield return dialogueBox.TypeDialogue("Wrong answer!");
@@ -141,11 +149,12 @@ public class BattleSystem : MonoBehaviour
             }
             else
             {
-                if (currentQuestion++ == EnemyUnit.monster.Base.QuestionCount - 1) {
-                    currentQuestion = 0;
-                } 
+                
                 while (questions[currentQuestion].Answered == true) {
                     currentQuestion++;
+                    if (currentQuestion == EnemyUnit.monster.Base.QuestionCount) {
+                    currentQuestion = 0;
+                    } 
                 }
                 yield return EnemyQuestion();
             }

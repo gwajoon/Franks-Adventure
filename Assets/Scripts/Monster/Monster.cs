@@ -26,21 +26,20 @@ public class Monster
 
     public void Init()
     {
-        HP = Base.MaxHp * Level + 5;
+        HP = Base.MaxHp;
     }
 
     public int MaxHp {
-        get { return Mathf.FloorToInt(Base.MaxHp * Level) + 5; }
+        get { return Base.MaxHp; }
     }
 
     public int Attack {
-        get { return Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5; }
+        get { return Mathf.FloorToInt(Base.Attack);}
     }
 
     public bool TakeDamage(string answer, Monster attacker)
     {
-        float modifiers = Random.Range(0.9f, 1f);
-        int damage = Mathf.FloorToInt(attacker.Attack * modifiers);
+        int damage = Mathf.FloorToInt(attacker.Attack);
 
         HP -= damage;
         if (HP <= 0)

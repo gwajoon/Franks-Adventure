@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Object : MonoBehaviour, Interactable
+public class Boulder : MonoBehaviour, Interactable
 {
     [SerializeField] Dialogue dialogue;
     [SerializeField] Sprite image;

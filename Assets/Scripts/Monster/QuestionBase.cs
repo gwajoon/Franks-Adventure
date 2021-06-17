@@ -12,6 +12,7 @@ public class QuestionBase : ScriptableObject
     [SerializeField] AnswerBase correctAnswer;
 
     public bool answered = false;
+    
     public string Name {
         get { return name; }
     }
