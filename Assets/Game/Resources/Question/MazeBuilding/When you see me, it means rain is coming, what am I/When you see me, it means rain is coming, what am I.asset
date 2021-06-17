@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: When you see me, it means rain is coming, what am I
+  m_EditorClassIdentifier: 
+  name: When you see me, it means rain is coming, what am I
+  explanation: When you see me, it means rain is coming, what am I
+  answers:
+  - {fileID: 11400000, guid: b7219218d4f712a458163bfe1126a3aa, type: 2}
+  - {fileID: 11400000, guid: 889467f9df850564bace8c6ce1bc9797, type: 2}
+  - {fileID: 11400000, guid: 142ee44c1ee4dc04086e92d423c4535f, type: 2}
+  - {fileID: 11400000, guid: f8aafd2a64101cf4a8d66019a822903f, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 889467f9df850564bace8c6ce1bc9797, type: 2}
+  answered: 0

@@ -15,8 +15,7 @@ MonoBehaviour:
   name: 
   description: 
   questions:
-  - {fileID: 11400000, guid: 2a5f9b955fda54f4c9ecdaf66f273f68, type: 2}
-  - {fileID: 11400000, guid: 7b8eef4e43cb34bc6b0b5f1d1b5f5d3e, type: 2}
+  - {fileID: 11400000, guid: d4d7799c8e1365149a260ef3ffbecd35, type: 2}
   sprite: {fileID: 21300000, guid: a55057b4f95d148e39d7a514d5632f9a, type: 3}
-  maxHp: 2
+  maxHp: 1
   attack: 25
