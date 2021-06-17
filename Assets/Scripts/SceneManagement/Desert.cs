@@ -13,8 +13,7 @@ public class Desert : MonoBehaviour
 
     void Update() 
     {
-       // if (BH1.activated = true && BH2.activated = true && BH3.activated = true && BH4.activated = true && BH5.activated = true)
-        if (BH1.activated == true)  
+        if (BH1.activated == true && BH2.activated == true && BH3.activated == true && BH4.activated == true && BH5.activated == true)
         {      
             CameraShake.Instance.shakeDuration = 2f;
             BH1.activated = false;
