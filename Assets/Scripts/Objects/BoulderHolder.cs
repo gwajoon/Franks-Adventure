@@ -8,16 +8,23 @@ public class BoulderHolder : MonoBehaviour, Interactable
     [SerializeField] Sprite sprite;
     [SerializeField] string name;
 
+    public bool activated;
+
+    void Start()
+    {
+        activated = false;
+    }
+
     public void Interact(Transform initiator) {
-        // Show text when player interact with object
         StartCoroutine(DialogueManager.Instance.ShowDialogue(dialogue));
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == name)
         {
             GetComponent<SpriteRenderer>().sprite = sprite;
+            activated = true;
         }
     }
 }
