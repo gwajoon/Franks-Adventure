@@ -11,6 +11,9 @@ public class Desert : MonoBehaviour
     public BoulderHolder BH5;
     public Dialogue solvedDialogue;
 
+    public List<GameObject> NPC;
+    public List<GameObject> SNPC;
+
     void Update() 
     {
         if (BH1.activated == true && BH2.activated == true && BH3.activated == true && BH4.activated == true && BH5.activated == true)
@@ -22,6 +25,14 @@ public class Desert : MonoBehaviour
             BH4.activated = false;
             BH5.activated = false;
             StartCoroutine(DialogueManager.Instance.ShowDialogue(solvedDialogue));
+
+            foreach (GameObject npc in NPC) {
+                npc.SetActive(false);
+            }
+
+            foreach (GameObject snpc in SNPC) {
+                snpc.SetActive(true);
+            }
         }
     }
 }
