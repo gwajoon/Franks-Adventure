@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: How many times are the villager's sentences looped for
+  m_EditorClassIdentifier: 
+  name: How many times are the villager's sentences looped for
+  explanation: Go and talk to the villagers to find out.
+  answers:
+  - {fileID: 11400000, guid: c71aed2ef78c9491d8b7588cd1e83943, type: 2}
+  - {fileID: 11400000, guid: 8315ad2f2161049f09a42c3e89a98446, type: 2}
+  - {fileID: 11400000, guid: 84d3906ee5fc4491d92c84764b9c7fc2, type: 2}
+  - {fileID: 11400000, guid: b37a006b354e741339452e81248586ab, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 8315ad2f2161049f09a42c3e89a98446, type: 2}
+  answered: 0

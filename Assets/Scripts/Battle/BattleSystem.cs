@@ -27,6 +27,7 @@ public class BattleSystem : MonoBehaviour
 
     Monster wildMonster;
 
+    // initiate normal encounters
     public void StartBattle(Monster Frank, Monster wildMonster) 
     {
         this.Frank = Frank;
@@ -35,6 +36,7 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
+    // overloaded function to initiate trainer battle
     public void StartTrainerBattle(Monster Frank, TrainerController trainer) 
     {
         isTrainerBattle = true;
@@ -45,6 +47,7 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(SetupBattle());
     }
 
+    // setting of the HUD and dialogue
     public IEnumerator SetupBattle()
     {
         PlayerUnit.Setup(Frank);
