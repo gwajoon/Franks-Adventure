@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 11825772}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: sceneToLoad
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal

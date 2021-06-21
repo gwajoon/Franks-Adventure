@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Riddle Building.unity
     guid: a0058832a4c588a4b85ffef254a1c3e7
+  - enabled: 1
+    path: Assets/Scenes/Route1.unity
+    guid: d35f862e7b586c54b9ac74d4f6e1a02d
   m_configObjects: {}
