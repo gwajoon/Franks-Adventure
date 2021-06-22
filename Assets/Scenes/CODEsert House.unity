@@ -4600,7 +4600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
@@ -8706,6 +8706,7 @@ MonoBehaviour:
   SNPC:
   - {fileID: 0}
   - {fileID: 0}
+  isActivated: 0
 --- !u!114 &1347230665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8901,7 +8902,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
