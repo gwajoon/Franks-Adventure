@@ -19819,26 +19819,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1081618355021124961, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1395995185665535186, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -814485131688070935, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 7351863885422627306, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 3293454640452312678, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -5085266551433985882, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -931044396480536149, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 2829436080761854759, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  defaultDirection: 1
+  - {fileID: 3195408493009091201, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -9222473545557531864, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 6951890730472802499, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  defaultDirection: 2
 --- !u!114 &649807367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19869,10 +19865,10 @@ MonoBehaviour:
     - Thank you for saving us citizen! May I know your name?
     - I see! So you are the legendary Frank! I have heard much about your knowledge!
     - You haved saved us and Comland from Perry today.
-    - We will never forget your heroism.
-    - I wish you luck in your journey ahead.
-    - Please defeat Frank the menace for us.
-  movementPattern: []
+    - We will never forget your heroism here today, all the best!
+  movementPattern:
+  - {x: 2, y: 0}
+  - {x: -2, y: 0}
   timeBetweenPattern: 2
 --- !u!61 &649807369
 BoxCollider2D:
@@ -19891,7 +19887,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.90909094, y: 1.3636364}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19961,7 +19957,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20524,7 +20520,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 8.35, y: 7.54}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20594,7 +20590,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 490b89c78d3c8374383e9790e950903d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20613,8 +20609,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046689205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.47, y: 7.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -15.271, y: 7.5137, z: 0}
+  m_LocalScale: {x: 0.18169531, y: 0.18169531, z: 0.18169531}
   m_Children:
   - {fileID: 95516612}
   - {fileID: 525785275}
@@ -20785,17 +20781,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - Hello, what is your name kind sir? Please help!
-    - Oh I see your name is Frank! Please help our building restore the lights that
-      Perry destroyed!
-    - This building is actually the headquarters of Comland's Police.
-    - Please help us restore light by defeating the various monsters that Frank created
-      in the building.
-    - After you defeat Perry's evil friends in the building, talk to them and get
-      any useful information out of them!
-    - Please remember to talk to them after you beat them, our safety are in your
-      hands!
-  movementPattern: []
+    - Please help us!
+    - We have been taken hostage by Perry's riddles.
+    - Please answer their riddles and defeat them to rescue us!
+    - My colleagues are just past me!
+  movementPattern:
+  - {x: 1, y: 0}
+  - {x: -1, y: 0}
   timeBetweenPattern: 2
 --- !u!61 &1386818445
 BoxCollider2D:
@@ -41915,7 +41907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - I am your first challeger, bring it on!
+    - I am your first challenger, bring it on!
     - You have to defeat me to proceed. Muahahaha
   dialogueAfterBattle:
     lines:
@@ -42098,8 +42090,8 @@ GameObject:
   - component: {fileID: 2091197398}
   - component: {fileID: 2091197397}
   - component: {fileID: 2091197396}
-  - component: {fileID: 2091197395}
   - component: {fileID: 2091197394}
+  - component: {fileID: 2091197395}
   m_Layer: 8
   m_Name: Perry
   m_TagString: Untagged
@@ -42150,25 +42142,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1081618355021124961, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1395995185665535186, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -814485131688070935, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 7351863885422627306, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 3293454640452312678, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -5085266551433985882, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -931044396480536149, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 2829436080761854759, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 3195408493009091201, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -9222473545557531864, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 6951890730472802499, guid: 136d789df254642098657d21a61ff8da, type: 3}
   defaultDirection: 2
 --- !u!114 &2091197396
 MonoBehaviour:
@@ -42200,7 +42188,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.90909094, y: 1.3636364}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -42270,7 +42258,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

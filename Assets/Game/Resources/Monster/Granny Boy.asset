@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81ee19b35389450da15879cd6b7b4eb, type: 3}
-  m_Name: DuckMonster4
+  m_Name: Granny Boy
   m_EditorClassIdentifier: 
-  name: 
+  name: Granny Boy
   description: 
   questions:
   - {fileID: 11400000, guid: 6cdb716fed6e41846bcab8821be159b8, type: 2}
-  sprite: {fileID: 21300000, guid: a55057b4f95d148e39d7a514d5632f9a, type: 3}
+  sprite: {fileID: 21300000, guid: 118958ec7ac20fb43a18ea61d58fdf9f, type: 3}
   maxHp: 1
   attack: 25

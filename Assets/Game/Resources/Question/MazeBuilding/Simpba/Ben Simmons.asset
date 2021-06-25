@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbedf31a0e47d41a189719df1438320d, type: 3}
-  m_Name: The lion's best friend, the dog
+  m_Name: Ben Simmons
   m_EditorClassIdentifier: 
-  name: The lion's best friend, the dog
+  name: Ben Simmons

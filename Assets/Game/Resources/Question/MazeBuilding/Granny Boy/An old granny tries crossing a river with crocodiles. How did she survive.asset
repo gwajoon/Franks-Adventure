@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
-  m_Name: An old granny wants to cross a crocodile-infested river. But somehow, she
-    crossed the river safely
+  m_Name: An old granny tries crossing a river with crocodiles. How did she survive
   m_EditorClassIdentifier: 
-  name: An old granny wants to cross a crocodile-infested river. But somehow, she
-    crossed the river safely. How?
+  name: An old granny tries crossing a river with crocodiles. How did she survive?
   explanation: Did you know that river crossing is extremely dangerous to everyone,
     not just grannies?
   answers:

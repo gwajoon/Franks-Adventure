@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
-  m_Name: The whole jungle was invited the the lion's party, but somebody did not
-    show up, who was it
+  m_Name: The whole jungle was invited to the lion's party, guess who was absent
   m_EditorClassIdentifier: 
-  name: The whole jungle was invited the the lion's party, but somebody did not show
-    up, who was it?
-  explanation: I love lions, I love their golden hair and powerful jaws
+  name: The whole jungle was invited to the lion's party, guess who was absent?
+  explanation: I love my hair and my powerful muscles
   answers:
   - {fileID: 11400000, guid: 50be07f63fbb1064d9b1ad8e70db2f95, type: 2}
   - {fileID: 11400000, guid: 02f82bbe628146442ac5f14cb3f4af00, type: 2}

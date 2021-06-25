@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
-  m_Name: Halfway through crossing the river, the granny collapsed and died. How
-    did this happen
+  m_Name: Crossing the crocodile-infested river halfway, the granny died. How
   m_EditorClassIdentifier: 
-  name: Halfway through crossing the river, the granny collapsed and died. How did
-    this happen?
+  name: Crossing the crocodile-infested river halfway, the granny died. How?
   explanation: I am Perry, and I will crush Comland and make it mine hehehe...
   answers:
   - {fileID: 11400000, guid: 4c3cc95763f46204ba84414938ae672e, type: 2}

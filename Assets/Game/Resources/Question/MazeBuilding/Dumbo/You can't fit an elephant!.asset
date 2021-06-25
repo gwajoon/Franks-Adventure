@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbedf31a0e47d41a189719df1438320d, type: 3}
-  m_Name: The crocodile was away at the lion's party
+  m_Name: You can't fit an elephant!
   m_EditorClassIdentifier: 
-  name: The crocodile was away at the lion's party
+  name: You can't fit an elephant!

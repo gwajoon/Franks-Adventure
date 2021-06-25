@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81ee19b35389450da15879cd6b7b4eb, type: 3}
-  m_Name: DuckMonster2
+  m_Name: Perry
   m_EditorClassIdentifier: 
-  name: 
+  name: Perry
   description: 
   questions:
-  - {fileID: 11400000, guid: 7f8215b9df1100441af95fc20fd076a4, type: 2}
-  sprite: {fileID: 138822527552902627, guid: 639e1ae2a7c9e4d67b9398b73ba83a6e, type: 3}
+  - {fileID: 11400000, guid: e0ca3ee8da6a39741b9c86379e53bfb3, type: 2}
+  sprite: {fileID: 21300000, guid: 4f68af66cb664ce4fbfc15672b9f3b30, type: 3}
   maxHp: 1
   attack: 25
