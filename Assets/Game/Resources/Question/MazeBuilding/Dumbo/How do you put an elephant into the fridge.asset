@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: How do you put an elephant into the fridge
+  m_EditorClassIdentifier: 
+  name: How do you put an elephant into the fridge?
+  explanation: It is so simple, do I really need to explain...
+  answers:
+  - {fileID: 11400000, guid: 7412b1352b9288e4eb553a916a60da42, type: 2}
+  - {fileID: 11400000, guid: 3a05db634b71a29459bbe4dc7c314dc2, type: 2}
+  - {fileID: 11400000, guid: 1b35a58f35f38f747970750f4438321f, type: 2}
+  - {fileID: 11400000, guid: c300010e5c91cc54589cae8703be4998, type: 2}
+  correctAnswer: {fileID: 11400000, guid: c300010e5c91cc54589cae8703be4998, type: 2}
+  answered: 0

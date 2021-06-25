@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: Halfway through crossing the river, the granny collapsed and died. How
+    did this happen
+  m_EditorClassIdentifier: 
+  name: Halfway through crossing the river, the granny collapsed and died. How did
+    this happen?
+  explanation: I am Perry, and I will crush Comland and make it mine hehehe...
+  answers:
+  - {fileID: 11400000, guid: 4c3cc95763f46204ba84414938ae672e, type: 2}
+  - {fileID: 11400000, guid: 8c0ba1eff68e72d42af9423d5536e617, type: 2}
+  - {fileID: 11400000, guid: 21af1e4924edd4048a087906be79877b, type: 2}
+  - {fileID: 11400000, guid: b086ca63fe7ee9f409da182145959e1c, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 4c3cc95763f46204ba84414938ae672e, type: 2}
+  answered: 0

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
+  m_Name: An old granny wants to cross a crocodile-infested river. But somehow, she
+    crossed the river safely
+  m_EditorClassIdentifier: 
+  name: An old granny wants to cross a crocodile-infested river. But somehow, she
+    crossed the river safely. How?
+  explanation: Did you know that river crossing is extremely dangerous to everyone,
+    not just grannies?
+  answers:
+  - {fileID: 11400000, guid: 65427039d60eeb04d93fab58c80e3b0a, type: 2}
+  - {fileID: 11400000, guid: 9300b0e2aa0d8da418e14357ad7278e6, type: 2}
+  - {fileID: 11400000, guid: 17f6c102e118ea34ea67013da003832b, type: 2}
+  - {fileID: 11400000, guid: d0bb7f82016c03a4dbb61cda1fe53a95, type: 2}
+  correctAnswer: {fileID: 0}
+  answered: 0

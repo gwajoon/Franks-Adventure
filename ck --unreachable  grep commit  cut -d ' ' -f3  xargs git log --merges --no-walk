@@ -1,0 +1,278 @@
+[33mcommit cc4032c4d95a22fb2c7f5ff85c069927fbbf5a45[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Thu Jun 24 23:51:22 2021 +0800
+
+    Small optimisations
+
+[33mcommit 1e037db50a11b2331455c94e40e1bf9b1176f0ed[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Thu Jun 24 20:05:55 2021 +0800
+
+    Finished snow village map
+
+[33mcommit f90ead0042b4602f0c235e307b917e5c16a98f57[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Tue Jun 22 23:11:14 2021 +0800
+
+    Linked all maps together
+    
+    - added cave map
+
+[33mcommit 4276acc512f1774a31c847344990fbbb6de59487[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Tue Jun 22 18:25:33 2021 +0800
+
+    Linked maps
+
+[33mcommit ba52a79cef3cc2805f0d004486f808b0e5151289[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Mon Jun 21 21:32:02 2021 +0800
+
+    portal to route1
+
+[33mcommit 523074559e23cff83fe837f2d8905e9a4f26d358[m
+Merge: 1c66c51d 4b03f667
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Mon Jun 21 20:53:12 2021 +0800
+
+    Merge branch 'main' of https://github.com/gwajoon/Frank-s-Adventure into main
+
+[33mcommit 1c66c51d6a85909bf472ea566544792e47e116f7[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Mon Jun 21 20:52:01 2021 +0800
+
+    Extended Snow Map
+
+[33mcommit 4b03f66797e0eceeee8ad283ef217e19912d742b[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Mon Jun 21 20:30:36 2021 +0800
+
+    added portal to riddle building
+
+[33mcommit ff9f525a2f6a2657054b8347e4fcb7b8444e193c[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sun Jun 20 23:05:59 2021 +0800
+
+    Made CODEsert map nicer
+
+[33mcommit 8038cad4f2682224a25cd6997ded892bc8cdf90c[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sun Jun 20 00:08:06 2021 +0800
+
+    Added features to snow village
+    
+    - more npcs
+    - more map area
+    - trainer
+
+[33mcommit 2a7941b738baa458bb43dce52c6498825a7ffa3b[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sat Jun 19 18:51:11 2021 +0800
+
+    Added Snow Village
+    
+    - created rough snow map
+    - added some looped NPCs and trainers
+    - spliced new NPCs
+
+[33mcommit 068baa122351a9f2d4ded83c2ad4a2ef43e6fffd[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Fri Jun 18 00:18:09 2021 +0800
+
+    Riddles for map
+
+[33mcommit 7475277a1347021ef44e417a01493d4c1c932345[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Thu Jun 17 20:20:53 2021 +0800
+
+    Added solved NPCs
+
+[33mcommit 3df6d0a5acb853e4f40d70ab3678594de55ac4e7[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Thu Jun 17 19:46:58 2021 +0800
+
+    Added features to sandstorm map
+
+[33mcommit 128df0b6c126554c2a7b4597b5753a1b8622d4dc[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Thu Jun 17 19:43:13 2021 +0800
+
+    Added features to sandstorm map
+    
+    - added camera shaking
+    - added boulder holders
+    - added desert script
+
+[33mcommit e1e6c9a2b559650a5a5f9045566c643d679a23e8[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Thu Jun 17 16:37:21 2021 +0800
+
+    Optimised battle system
+    
+    - auto untick bool answered after battle
+    - set questions to health ratio properly
+    - set attack damage properly
+
+[33mcommit db45b1583570cb8b1439ea7b088587101c9b8c1b[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Thu Jun 17 00:00:31 2021 +0800
+
+    creation of Mazebuilding
+    
+    Mazebuilding(FOV limitation)
+
+[33mcommit cd3cc5aafee559ba7eed05b37cfb116680dd4afe[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 16 20:57:27 2021 +0800
+
+    repush
+
+[33mcommit 4736436e92b8495eee9a50f82cd1c04d75da7f0d[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 16 20:16:49 2021 +0800
+
+    Added interactable objects
+
+[33mcommit 7041cff2b9d370dec4e7d5741bf851c385c89fdf[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 16 00:13:13 2021 +0800
+
+    Add desert NPCs and boulders
+
+[33mcommit 604cd01a8a6fe8fb2cf291f4d98ec69bbc50cc87[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sat Jun 12 23:34:45 2021 +0800
+
+    Created more questions
+
+[33mcommit 5a01473a29082a0839f0a3197b6e2ddcdb983978[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sat Jun 12 01:18:25 2021 +0800
+
+    monster only ask wrongly answered questions
+
+[33mcommit 6c1ba15d47dd35f994c54bff0e5fac5dec6e0344[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Thu Jun 10 23:25:39 2021 +0800
+
+    portal fades, scene switching to indoors
+
+[33mcommit 78289e1c8002f82778d9bee4ea9b8f3b3fcac5cb[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 9 21:16:36 2021 +0800
+
+    Shifted maps
+
+[33mcommit bdf76c741d7867f85db20a77bf505d270f79e541[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Wed Jun 9 00:13:26 2021 +0800
+
+    Spawnpoint/SwitchScene
+    
+    Switching of scenes, destination portal, creation of essential objects to ensure they are not destroyed in process of scene switching
+
+[33mcommit 4a1bf1a1e359bc728dd7f852ba4e7f03bbb2ee00[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Tue Jun 8 00:14:04 2021 +0800
+
+    Refine game controller and battle system
+
+[33mcommit 6471d516836cbeab77b7043a3be68d94fe2e51b6[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sat Jun 5 01:19:09 2021 +0800
+
+    Add Trainers, Map Area of Monsters, Clean up code
+
+[33mcommit f867d50a20de37f024ba6c366c732349732ea3e8[m
+Merge: 036c4ff1 cce8602d
+Author: gwajoon <77633638+gwajoon@users.noreply.github.com>
+Date:   Wed Jun 2 22:50:56 2021 +0800
+
+    Merge pull request #1 from gwajoon/guojun
+    
+    Brushed up map for WebGL deployment
+
+[33mcommit cce8602da9465638793c0f6020fada07fc7efeeb[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sat May 29 19:03:39 2021 +0800
+
+    Brushed up map for WebGL deployment
+
+[33mcommit 036c4ff1686415f75ddd104e2b5ad2afa1b33e66[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 2 22:46:05 2021 +0800
+
+    Revert "change NPC dialogues and add questions"
+    
+    This reverts commit da812067283b06ebe0d405bb9fd8fce31a522563.
+
+[33mcommit da812067283b06ebe0d405bb9fd8fce31a522563[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 2 22:45:04 2021 +0800
+
+    change NPC dialogues and add questions
+
+[33mcommit f1286466821cb4f5f1573db8601df0e2e4db32b3[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 2 22:39:31 2021 +0800
+
+    Revert "Revert "updated border of maps""
+    
+    This reverts commit 7ead589c67d67f4173d890eb4ddddcfb33a50c3b.
+
+[33mcommit 7ead589c67d67f4173d890eb4ddddcfb33a50c3b[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 2 22:37:59 2021 +0800
+
+    Revert "updated border of maps"
+    
+    This reverts commit bfb55390ef85fdf3dbc8f062b41d52ffdbb9251f.
+
+[33mcommit ac160a91cdee91df678bc2a89fdf5a5ea01389aa[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 2 22:25:16 2021 +0800
+
+    Revert ""change NPC dialogues and add questions""
+    
+    This reverts commit 18e1569fa530b49e86b5eb86388f071eff55c4ea.
+
+[33mcommit 18e1569fa530b49e86b5eb86388f071eff55c4ea[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Wed Jun 2 21:45:39 2021 +0800
+
+    "change NPC dialogues and add questions"
+
+[33mcommit bfb55390ef85fdf3dbc8f062b41d52ffdbb9251f[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Sun May 30 18:15:55 2021 +0800
+
+    updated border of maps
+
+[33mcommit dbc89f627696402ce1b31bb2f72a7b14e398d704[m[33m ([m[1;31morigin/guojun[m[33m)[m
+Author: GwaJoon <hengguojun25@gmail.com>
+Date:   Sat May 29 19:03:39 2021 +0800
+
+    Brushed up map for WebGL deployment
+
+[33mcommit 53492893143dcf0533aca1f2adffca4c60bd6ee5[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Fri May 28 01:06:08 2021 +0800
+
+    Addition of Desert map, layout of Buildings
+
+[33mcommit c08f0be52402a91b7ad529bf2ab674c2a891918c[m
+Merge: 46caae0b e6f7aef8
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Thu May 27 21:17:05 2021 +0800
+
+    Merge branch 'main' of https://github.com/gwajoon/Franks-Adventure into main
+
+[33mcommit 46caae0b0477b169847a2a5fe0ac407cdc7e2a27[m
+Author: jettyevy <siejiesiang@gmail.com>
+Date:   Thu May 27 21:16:48 2021 +0800
+
+    Revert "Addition of desert map"
+    
+    This reverts commit ee75b585bab51920a0fa958924e5f43c3e9f36c6.
+
+[33mcommit

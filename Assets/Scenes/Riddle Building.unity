@@ -20224,7 +20224,7 @@ GameObject:
   - component: {fileID: 1032046691}
   - component: {fileID: 1032046690}
   m_Layer: 8
-  m_Name: Trainer3
+  m_Name: Simpba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20244,11 +20244,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - I will not be beaten so easily!
-    - I will not be beaten so easily!
+    - Will you be able to solve my riddle I wonder
+    - Countless have tried, countless have failed...
   dialogueAfterBattle:
     lines:
-    - Perhaps rain will come...
+    - Only the elephant did not show up because he was stuck in the fridge hehe..
   monster:
     _base: {fileID: 11400000, guid: e74d1d3fd344bd047a2149c9303c928b, type: 2}
     level: 1
@@ -20430,7 +20430,7 @@ GameObject:
   - component: {fileID: 1046689207}
   - component: {fileID: 1046689206}
   m_Layer: 8
-  m_Name: Trainer2
+  m_Name: Dumbo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20454,7 +20454,8 @@ MonoBehaviour:
     - You have to defeat me to proceed. Muahahaha
   dialogueAfterBattle:
     lines:
-    - Clouded skies...
+    - You have managed to solve my difficult riddle...
+    - I took 10 years to come up with this...
   monster:
     _base: {fileID: 11400000, guid: 2b879bc3916abda4fb6090781350cfb7, type: 2}
     level: 1
@@ -21084,7 +21085,7 @@ GameObject:
   - component: {fileID: 1586700221}
   - component: {fileID: 1586700220}
   m_Layer: 8
-  m_Name: Trainer4
+  m_Name: Granny boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21108,7 +21109,7 @@ MonoBehaviour:
     - I will defeat you here and now
   dialogueAfterBattle:
     lines:
-    - If so will you stay here with me?
+    - The crocodile was away at the lion's party...
   monster:
     _base: {fileID: 11400000, guid: 77b7422485478974b852cbffdc4ccc9e, type: 2}
     level: 4
@@ -41894,7 +41895,7 @@ GameObject:
   - component: {fileID: 1937886974}
   - component: {fileID: 1937886973}
   m_Layer: 8
-  m_Name: Trainer1
+  m_Name: Ben Simmons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41918,7 +41919,7 @@ MonoBehaviour:
     - You have to defeat me to proceed. Muahahaha
   dialogueAfterBattle:
     lines:
-    - A faint clap of thunder...
+    - You are so good at math...
   monster:
     _base: {fileID: 11400000, guid: 2a6dba25610dc6946b6e0ec40fa3fb45, type: 2}
     level: 1
@@ -42076,8 +42077,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937886972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 3.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.5, y: 3.7337, z: 0}
+  m_LocalScale: {x: 1, y: 1.0163, z: 1}
   m_Children:
   - {fileID: 999641158}
   - {fileID: 1740050871}
@@ -42100,7 +42101,7 @@ GameObject:
   - component: {fileID: 2091197395}
   - component: {fileID: 2091197394}
   m_Layer: 8
-  m_Name: Trainer5
+  m_Name: Perry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42121,19 +42122,16 @@ MonoBehaviour:
   dialogue:
     lines:
     - Impressive that you got this far...
-    - But how much do you really remember!
+    - But you will not be able to answer my question!
+    - Because my logic is impeccable and my knowledge boundless!
+    - I am Perry the Perv!
   dialogueAfterBattle:
     lines:
-    - You have defeated me, here is your riddle
-    - A faint clap of thunder
-    - Clouded skies
-    - Perhaps rain will come
-    - If so, will you stay here with me?
-    - '-'
-    - A faint clap of thunder
-    - Even if rain comes not
-    - I will stay here, Together with you
-    - We are sorry for taking advantage of th
+    - Well, the brick from the hot air balloon landed on the granny so she died,
+      here's your riddle
+    - Can't believe I lost to you...
+    - I will be back, you have not seen the last of me...
+    - Grrrr....
   monster:
     _base: {fileID: 11400000, guid: 03075c0deb9779f4380a38f03510b29c, type: 2}
     level: 4
