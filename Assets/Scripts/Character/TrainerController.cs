@@ -69,6 +69,11 @@ public class TrainerController : MonoBehaviour, Interactable
         FOV.gameObject.SetActive(false);
     }
 
+    private void Update()
+    {
+        character.HandleUpdate();
+    }
+
     public void SetFOVRotation(FacingDirection dir)
     {
         float angle = 0f;

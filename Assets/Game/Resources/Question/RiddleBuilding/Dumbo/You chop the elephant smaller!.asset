@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbedf31a0e47d41a189719df1438320d, type: 3}
-  m_Name: The granny jumped across!
+  m_Name: You chop the elephant smaller!
   m_EditorClassIdentifier: 
-  name: The granny jumped across!
+  name: You chop the elephant up!

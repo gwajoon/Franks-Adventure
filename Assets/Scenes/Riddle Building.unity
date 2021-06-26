@@ -19819,22 +19819,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: -1081618355021124961, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: -1395995185665535186, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 6517483204589715345, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 387865728893110253, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 6517483204589715345, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -1882907866370202344, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   walkUpSprites:
-  - {fileID: -814485131688070935, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: 7351863885422627306, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: 3293454640452312678, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -3316152167686765174, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 1155408264464777853, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -3316152167686765174, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -5299721429779188227, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   walkLeftSprites:
-  - {fileID: -5085266551433985882, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: -931044396480536149, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: 2829436080761854759, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 2267861653584595443, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -7866382175944858263, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 2267861653584595443, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 9206741390096764846, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   walkRightSprites:
-  - {fileID: 3195408493009091201, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: -9222473545557531864, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  - {fileID: 6951890730472802499, guid: 136d789df254642098657d21a61ff8da, type: 3}
-  defaultDirection: 2
+  - {fileID: 7638900367714590843, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 8229388464887303367, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 7638900367714590843, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -2317374173279916502, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  defaultDirection: 1
 --- !u!114 &649807367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19864,8 +19868,8 @@ MonoBehaviour:
     lines:
     - Thank you for saving us citizen! May I know your name?
     - I see! So you are the legendary Frank! I have heard much about your knowledge!
-    - You haved saved us and Comland from Perry today.
-    - We will never forget your heroism here today, all the best!
+    - You haved saved us from Perry today.
+    - We will never forget your heroism here, all the best!
   movementPattern:
   - {x: 2, y: 0}
   - {x: -2, y: 0}
@@ -19887,7 +19891,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.90909094, y: 1.3636364}
+    oldSize: {x: 1.2045455, y: 1.3863636}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19957,7 +19961,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  m_Sprite: {fileID: 6517483204589715345, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19976,7 +19980,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649807365}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.45, y: 18.73, z: 0}
+  m_LocalPosition: {x: 19.54, y: 22.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20217,8 +20221,8 @@ GameObject:
   - component: {fileID: 1032046694}
   - component: {fileID: 1032046693}
   - component: {fileID: 1032046692}
-  - component: {fileID: 1032046691}
   - component: {fileID: 1032046690}
+  - component: {fileID: 1032046691}
   m_Layer: 8
   m_Name: Simpba
   m_TagString: Untagged
@@ -20240,7 +20244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - Will you be able to solve my riddle I wonder
+    - Will you be able to solve my riddle I wonder?
     - Countless have tried, countless have failed...
   dialogueAfterBattle:
     lines:
@@ -20263,26 +20267,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -4314437495874158537, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -6235816095156791265, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 2432823013580110568, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -6350973155118055082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7807829271604632123, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1809826164330583281, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 8560456131487977280, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 2271478178644322213, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -5192850607114459082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 6155827053734146658, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 3086167779971804323, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  defaultDirection: 2
+  - {fileID: -8638500181952121695, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 758269013529323636, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1064563099594993019, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7752357561335447024, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  defaultDirection: 3
 --- !u!114 &1032046692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20313,7 +20317,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.9032258, y: 1.2903225}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20383,7 +20387,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20423,8 +20427,8 @@ GameObject:
   - component: {fileID: 1046689210}
   - component: {fileID: 1046689209}
   - component: {fileID: 1046689208}
-  - component: {fileID: 1046689207}
   - component: {fileID: 1046689206}
+  - component: {fileID: 1046689207}
   m_Layer: 8
   m_Name: Dumbo
   m_TagString: Untagged
@@ -20446,8 +20450,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - Time to show me what you are made of
-    - You have to defeat me to proceed. Muahahaha
+    - Time to show me what you are made of!
+    - You have no chance of defeating me.
   dialogueAfterBattle:
     lines:
     - You have managed to solve my difficult riddle...
@@ -20470,25 +20474,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -4314437495874158537, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -6235816095156791265, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 2432823013580110568, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -6350973155118055082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7807829271604632123, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1809826164330583281, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 8560456131487977280, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 2271478178644322213, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -5192850607114459082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 6155827053734146658, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 3086167779971804323, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -8638500181952121695, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 758269013529323636, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1064563099594993019, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7752357561335447024, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   defaultDirection: 3
 --- !u!114 &1046689208
 MonoBehaviour:
@@ -20520,7 +20524,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.35, y: 7.54}
+    oldSize: {x: 0.9032258, y: 1.2903225}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20590,7 +20594,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 490b89c78d3c8374383e9790e950903d, type: 3}
+  m_Sprite: {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20609,8 +20613,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046689205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.271, y: 7.5137, z: 0}
-  m_LocalScale: {x: 0.18169531, y: 0.18169531, z: 0.18169531}
+  m_LocalPosition: {x: -15.48, y: 7.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 95516612}
   - {fileID: 525785275}
@@ -20734,25 +20738,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 6517483204589715345, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 387865728893110253, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -1882907866370202344, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -3316152167686765174, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 1155408264464777853, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -5299721429779188227, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 2267861653584595443, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -7866382175944858263, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 9206741390096764846, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 7638900367714590843, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: 8229388464887303367, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
+  - {fileID: -2317374173279916502, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   defaultDirection: 1
 --- !u!114 &1386818443
 MonoBehaviour:
@@ -20806,7 +20806,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1.2045455, y: 1.3863636}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -20876,7 +20876,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 6517483204589715345, guid: 391b95a5b69894e63976d1f19c13e0ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20895,7 +20895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386818441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -2.34, z: 0}
+  m_LocalPosition: {x: -0.51, y: -1.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21074,8 +21074,8 @@ GameObject:
   - component: {fileID: 1586700224}
   - component: {fileID: 1586700223}
   - component: {fileID: 1586700222}
-  - component: {fileID: 1586700221}
   - component: {fileID: 1586700220}
+  - component: {fileID: 1586700221}
   m_Layer: 8
   m_Name: Granny boy
   m_TagString: Untagged
@@ -21097,8 +21097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - You have gotten far in the darkness, but this is as the end of your journey
-    - I will defeat you here and now
+    - You have gotten far, but this is as the end of your journey.
+    - I will defeat you here and now.
   dialogueAfterBattle:
     lines:
     - The crocodile was away at the lion's party...
@@ -21120,25 +21120,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -4314437495874158537, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -6235816095156791265, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 2432823013580110568, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -6350973155118055082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7807829271604632123, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1809826164330583281, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 8560456131487977280, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 2271478178644322213, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -5192850607114459082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 6155827053734146658, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 3086167779971804323, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -8638500181952121695, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 758269013529323636, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1064563099594993019, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7752357561335447024, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   defaultDirection: 3
 --- !u!114 &1586700222
 MonoBehaviour:
@@ -21170,7 +21170,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.9032258, y: 1.2903225}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -21240,7 +21240,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -41908,7 +41908,7 @@ MonoBehaviour:
   dialogue:
     lines:
     - I am your first challenger, bring it on!
-    - You have to defeat me to proceed. Muahahaha
+    - You have to defeat me to proceed. Muahahaha.
   dialogueAfterBattle:
     lines:
     - You are so good at math...
@@ -41930,25 +41930,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -4314437495874158537, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -6235816095156791265, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 2432823013580110568, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -6350973155118055082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7807829271604632123, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1809826164330583281, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 8560456131487977280, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 2271478178644322213, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: -5192850607114459082, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 6155827053734146658, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 3086167779971804323, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -8638500181952121695, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 758269013529323636, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 1064563099594993019, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
+  - {fileID: 7752357561335447024, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   defaultDirection: 3
 --- !u!114 &1937886975
 MonoBehaviour:
@@ -41980,7 +41980,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.9032258, y: 1.2903225}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -42050,7 +42050,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 5607031728146029221, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -42113,17 +42113,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
+    - Well well, who do we have here? A kid?
     - Impressive that you got this far...
-    - But you will not be able to answer my question!
-    - Because my logic is impeccable and my knowledge boundless!
-    - I am Perry the Perv!
+    - But you will not be able to answer my question.
+    - I am Perry and will soon rule over Comland.
+    - Nobody can stop me! Muahahaha.
   dialogueAfterBattle:
     lines:
-    - Well, the brick from the hot air balloon landed on the granny so she died,
-      here's your riddle
-    - Can't believe I lost to you...
-    - I will be back, you have not seen the last of me...
-    - Grrrr....
+    - HAHAHA I knew you couldn't answer my question!
+    - Well, that's because I didn't give you the correct answer to choose from.
+    - Actually, the brick from the hot air balloon landed on the granny's head!
+    - Since you are a kid, I shall let you off this time.
+    - But just know that it's already too late to stop me...
   monster:
     _base: {fileID: 11400000, guid: 03075c0deb9779f4380a38f03510b29c, type: 2}
     level: 4
@@ -42144,18 +42145,22 @@ MonoBehaviour:
   walkDownSprites:
   - {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: -1081618355021124961, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 5663084043434095372, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: -1395995185665535186, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkUpSprites:
   - {fileID: -814485131688070935, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: 7351863885422627306, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -814485131688070935, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: 3293454640452312678, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkLeftSprites:
   - {fileID: -5085266551433985882, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: -931044396480536149, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -5085266551433985882, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: 2829436080761854759, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkRightSprites:
   - {fileID: 3195408493009091201, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: -9222473545557531864, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 3195408493009091201, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: 6951890730472802499, guid: 136d789df254642098657d21a61ff8da, type: 3}
   defaultDirection: 2
 --- !u!114 &2091197396

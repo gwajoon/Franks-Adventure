@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81ee19b35389450da15879cd6b7b4eb, type: 3}
-  m_Name: Final Perry
+  m_Name: Perry(Riddle)
   m_EditorClassIdentifier: 
   name: Perry
   description: 
   questions:
-  - {fileID: 11400000, guid: e6ae752991d1d4764a4583e617e77524, type: 2}
-  - {fileID: 11400000, guid: e274c8dc086b84ddba148c7231c0e3c3, type: 2}
-  sprite: {fileID: 21300000, guid: a55057b4f95d148e39d7a514d5632f9a, type: 3}
-  maxHp: 2
-  attack: 25
+  - {fileID: 11400000, guid: e0ca3ee8da6a39741b9c86379e53bfb3, type: 2}
+  sprite: {fileID: 21300000, guid: 4f68af66cb664ce4fbfc15672b9f3b30, type: 3}
+  maxHp: 1
+  attack: 75

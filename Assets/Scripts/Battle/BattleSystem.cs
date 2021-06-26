@@ -59,7 +59,7 @@ public class BattleSystem : MonoBehaviour
             yield return new WaitForSeconds(1f); 
         } else
         {
-            yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.name} has challenged you to a knowledge battle.");
+            yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.Name} has challenged you to a knowledge battle.");
             yield return new WaitForSeconds(1f);
         }
         StartCoroutine(EnemyQuestion());
@@ -144,11 +144,20 @@ public class BattleSystem : MonoBehaviour
 
             if (isFainted)
             {
-                yield return dialogueBox.TypeDialogue($"Frank fainted.");
-                PlayerUnit.PlayFaintAnimation();
+                if (EnemyUnit.monster.Base.Name == "Perry")
+                {
+                    yield return dialogueBox.TypeDialogue("MUAHAHAHA! You can't defeat me!");
+                    yield return dialogueBox.TypeDialogue("Talk to me after this, I shall reveal the answer.");
+                    yield return new WaitForSeconds(1f);
+                    OnBattleOver(true);
+                }
+                else {
+                    yield return dialogueBox.TypeDialogue($"Frank fainted.");
+                    PlayerUnit.PlayFaintAnimation();
 
-                yield return new WaitForSeconds(1f);
-                OnBattleOver(false);
+                    yield return new WaitForSeconds(1f);
+                    OnBattleOver(false);
+                }
             }
             else
             {
@@ -168,7 +177,7 @@ public class BattleSystem : MonoBehaviour
     {
         state = BattleState.PerformMove;
         dialogueBox.SetAnswerNames(questions[currentQuestion]);
-        yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.name} has a menacing question!");
+        yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.Name} has a menacing question!");
         yield return new WaitForSeconds(1f);
 
         yield return dialogueBox.TypeDialogue($"{EnemyUnit.monster.Base.QuestionName(currentQuestion)}?");

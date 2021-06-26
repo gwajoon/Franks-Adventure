@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
   m_Name: Crossing the crocodile-infested river halfway, the granny died. How
   m_EditorClassIdentifier: 
-  name: Crossing the crocodile-infested river halfway, the granny died. How?
-  explanation: I am Perry, and I will crush Comland and make it mine hehehe...
+  name: While crossing the crocodile-infested river halfway, the granny died. Why?
+  explanation: I am Perry, and I will make Comland mine hehehe...
   answers:
-  - {fileID: 11400000, guid: 4c3cc95763f46204ba84414938ae672e, type: 2}
+  - {fileID: 11400000, guid: 774e1315372124d26beeea42e8590e35, type: 2}
   - {fileID: 11400000, guid: 8c0ba1eff68e72d42af9423d5536e617, type: 2}
   - {fileID: 11400000, guid: 21af1e4924edd4048a087906be79877b, type: 2}
   - {fileID: 11400000, guid: b086ca63fe7ee9f409da182145959e1c, type: 2}
