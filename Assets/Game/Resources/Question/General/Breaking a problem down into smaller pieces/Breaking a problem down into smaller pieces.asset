@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Breaking a problem down into smaller pieces
   m_EditorClassIdentifier: 
   name: Breaking a problem down into smaller pieces is known as ________.
-  explanation: 
+  explanation: Another word for it is "breaking down".
   answers:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  correctAnswer: {fileID: 0}
+  - {fileID: 11400000, guid: 120e779b8312b4b1c87040f07248bc6b, type: 2}
+  - {fileID: 11400000, guid: e4511e2411b5c47b78e9e59426b71758, type: 2}
+  - {fileID: 11400000, guid: 16a9efbf624804d55883eb91b8671a58, type: 2}
+  - {fileID: 11400000, guid: 4074da55665a840bb935f8c91f30955f, type: 2}
+  correctAnswer: {fileID: 11400000, guid: 16a9efbf624804d55883eb91b8671a58, type: 2}
   answered: 0

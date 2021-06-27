@@ -19,4 +19,4 @@ MonoBehaviour:
   - {fileID: 0}
   sprite: {fileID: -4445699719359273135, guid: 0cd599e56e18842489d63535249eaa82, type: 3}
   maxHp: 100
-  attack: 25
+  attack: 50

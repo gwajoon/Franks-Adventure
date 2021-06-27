@@ -70,6 +70,8 @@ public class BattleSystem : MonoBehaviour
         state = BattleState.ActionSelection;
         dialogueBox.setDialogue($"{EnemyUnit.monster.Base.QuestionName(currentQuestion)}?");
         dialogueBox.EnableActionSelector(true);
+        dialogueBox.EnableDialogueText(true);
+        dialogueBox.EnableAnswerSelector(false);
     }
 
     void AnswerSelection()
@@ -78,6 +80,12 @@ public class BattleSystem : MonoBehaviour
         dialogueBox.EnableActionSelector(false);
         dialogueBox.EnableDialogueText(false);
         dialogueBox.EnableAnswerSelector(true);
+    }
+
+    IEnumerator Hint()
+    {
+        yield return dialogueBox.TypeDialogue(questions[currentQuestion].Explanation);
+        yield return new WaitForSeconds(2f);
     }
 
     IEnumerator PlayerMove()
@@ -138,6 +146,7 @@ public class BattleSystem : MonoBehaviour
             PlayerUnit.PlayHitAnimation();
 
             yield return dialogueBox.TypeDialogue(questions[currentQuestion].Explanation);
+            yield return new WaitForSeconds(0.5f);
 
             bool isFainted = PlayerUnit.monster.TakeDamage(answer, EnemyUnit.monster);
             yield return PlayerUnit.Hud.UpdateHP();
@@ -161,7 +170,6 @@ public class BattleSystem : MonoBehaviour
             }
             else
             {
-                
                 while (questions[currentQuestion].Answered == true) {
                     currentQuestion++;
                     if (currentQuestion == EnemyUnit.monster.Base.QuestionCount) {
@@ -223,8 +231,8 @@ public class BattleSystem : MonoBehaviour
             }
             else if (currentAction == 1) 
             {
-                // Run
-
+                // Hint
+                Hint();     
             }
         }
     }

@@ -136,11 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.82
+      value: -5.77
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -200,11 +200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593401359413, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593401359413, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.21
+      value: 0.62
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
@@ -20040,8 +20040,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 621968269
-  m_SortingLayer: 2
+  m_SortingLayerID: 31337199
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5955781087917997448, guid: 639e1ae2a7c9e4d67b9398b73ba83a6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20251,7 +20251,6 @@ MonoBehaviour:
     - Only the elephant did not show up because he was stuck in the fridge hehe..
   monster:
     _base: {fileID: 11400000, guid: e74d1d3fd344bd047a2149c9303c928b, type: 2}
-    level: 1
   exclamation: {fileID: 742981492}
   FOV: {fileID: 919904968}
 --- !u!114 &1032046691
@@ -20286,7 +20285,7 @@ MonoBehaviour:
   - {fileID: 758269013529323636, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   - {fileID: 1064563099594993019, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
   - {fileID: 7752357561335447024, guid: e211491395e53d84b8c4011a0ba1d72a, type: 3}
-  defaultDirection: 3
+  defaultDirection: 0
 --- !u!114 &1032046692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20458,7 +20457,6 @@ MonoBehaviour:
     - I took 10 years to come up with this...
   monster:
     _base: {fileID: 11400000, guid: 2b879bc3916abda4fb6090781350cfb7, type: 2}
-    level: 1
   exclamation: {fileID: 525785273}
   FOV: {fileID: 95516609}
 --- !u!114 &1046689207
@@ -20613,7 +20611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046689205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.48, y: 7.74, z: 0}
+  m_LocalPosition: {x: -14.56, y: 9.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 95516612}
@@ -20675,8 +20673,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 621968269
-  m_SortingLayer: 2
+  m_SortingLayerID: 31337199
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 5955781087917997448, guid: 639e1ae2a7c9e4d67b9398b73ba83a6e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21104,7 +21102,6 @@ MonoBehaviour:
     - The crocodile was away at the lion's party...
   monster:
     _base: {fileID: 11400000, guid: 77b7422485478974b852cbffdc4ccc9e, type: 2}
-    level: 4
   exclamation: {fileID: 1274807474}
   FOV: {fileID: 1602192568}
 --- !u!114 &1586700221
@@ -21369,7 +21366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wildMonsters:
   - _base: {fileID: 11400000, guid: 927f884dcc423457aa92904b82e8485e, type: 2}
-    level: 3
 --- !u!156049354 &1700549531
 Grid:
   m_ObjectHideFlags: 0
@@ -41914,7 +41910,6 @@ MonoBehaviour:
     - You are so good at math...
   monster:
     _base: {fileID: 11400000, guid: 2a6dba25610dc6946b6e0ec40fa3fb45, type: 2}
-    level: 1
   exclamation: {fileID: 1740050869}
   FOV: {fileID: 999641155}
 --- !u!114 &1937886974
@@ -42127,7 +42122,6 @@ MonoBehaviour:
     - But just know that it's already too late to stop me...
   monster:
     _base: {fileID: 11400000, guid: 03075c0deb9779f4380a38f03510b29c, type: 2}
-    level: 4
   exclamation: {fileID: 1916871557}
   FOV: {fileID: 1462590723}
 --- !u!114 &2091197395

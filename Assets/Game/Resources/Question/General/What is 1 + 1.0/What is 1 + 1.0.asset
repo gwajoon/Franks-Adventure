@@ -20,3 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 242ecf506e52b42de9d5953c8824e7fc, type: 2}
   - {fileID: 11400000, guid: d0a7cfdfbe3d04c65b671c706234374b, type: 2}
   correctAnswer: {fileID: 11400000, guid: 456371ea287e74d0c81ae8e737ef91e0, type: 2}
+  answered: 0

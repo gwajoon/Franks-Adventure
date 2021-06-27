@@ -41,7 +41,7 @@ public class MonsterBase : ScriptableObject
     }
 
     public string QuestionName(int index) {
-        return questions[index].name;
+        return questions[index].Name;
     }
 
     public List<QuestionBase> Questions {

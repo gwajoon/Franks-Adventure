@@ -1465,10 +1465,10 @@ TextureImporter:
       name: PngItem_4482799_51
       rect:
         serializedVersion: 2
-        x: 195
-        y: 261.125
-        width: 65.416664
-        height: 85.875
+        x: 205
+        y: 265
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1486,10 +1486,10 @@ TextureImporter:
       name: PngItem_4482799_52
       rect:
         serializedVersion: 2
-        x: 260
-        y: 261.125
-        width: 65.416664
-        height: 85.875
+        x: 273
+        y: 266
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1507,10 +1507,10 @@ TextureImporter:
       name: PngItem_4482799_53
       rect:
         serializedVersion: 2
-        x: 325
-        y: 261.125
-        width: 65.416664
-        height: 85.875
+        x: 340
+        y: 265
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1717,10 +1717,10 @@ TextureImporter:
       name: PngItem_4482799_63
       rect:
         serializedVersion: 2
-        x: 195
-        y: 176.125
-        width: 65.416664
-        height: 85.875
+        x: 206
+        y: 177
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1738,10 +1738,10 @@ TextureImporter:
       name: PngItem_4482799_64
       rect:
         serializedVersion: 2
-        x: 260
-        y: 176.125
-        width: 65.416664
-        height: 85.875
+        x: 272
+        y: 179
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1759,10 +1759,10 @@ TextureImporter:
       name: PngItem_4482799_65
       rect:
         serializedVersion: 2
-        x: 325
-        y: 176.125
-        width: 65.416664
-        height: 85.875
+        x: 339
+        y: 177
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1969,10 +1969,10 @@ TextureImporter:
       name: PngItem_4482799_75
       rect:
         serializedVersion: 2
-        x: 195
-        y: 91.125
-        width: 65.416664
-        height: 85.875
+        x: 207
+        y: 90
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1990,10 +1990,10 @@ TextureImporter:
       name: PngItem_4482799_76
       rect:
         serializedVersion: 2
-        x: 260
-        y: 91.125
-        width: 65.416664
-        height: 85.875
+        x: 274
+        y: 91
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2011,10 +2011,10 @@ TextureImporter:
       name: PngItem_4482799_77
       rect:
         serializedVersion: 2
-        x: 325
-        y: 91.125
-        width: 65.416664
-        height: 85.875
+        x: 339
+        y: 91
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2221,10 +2221,10 @@ TextureImporter:
       name: PngItem_4482799_87
       rect:
         serializedVersion: 2
-        x: 195
-        y: 6.125
-        width: 65.416664
-        height: 85.875
+        x: 208
+        y: 0
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2242,10 +2242,10 @@ TextureImporter:
       name: PngItem_4482799_88
       rect:
         serializedVersion: 2
-        x: 259
-        y: 6
-        width: 65
-        height: 86
+        x: 273
+        y: 3
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2263,10 +2263,10 @@ TextureImporter:
       name: PngItem_4482799_89
       rect:
         serializedVersion: 2
-        x: 325
-        y: 5
-        width: 65
-        height: 86
+        x: 341
+        y: 0
+        width: 40
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

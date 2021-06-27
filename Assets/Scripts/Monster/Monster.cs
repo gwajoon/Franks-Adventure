@@ -7,18 +7,10 @@ using UnityEngine;
 public class Monster 
 {
     [SerializeField] MonsterBase _base;
-    [SerializeField] int level;
     public MonsterBase Base
     {
         get {
             return _base;
-        }
-    }
-
-    public int Level
-    {
-        get {
-            return level;
         }
     }
 
