@@ -19866,8 +19866,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - Thank you for saving us citizen! May I know your name?
-    - I see! So you are the legendary Frank! I have heard much about your knowledge!
+    - Thank you for saving us! May I know your name?
+    - So you are the legendary Frank! I have heard much about your knowledge!
     - You haved saved us from Perry today.
     - We will never forget your heroism here, all the best!
   movementPattern:
