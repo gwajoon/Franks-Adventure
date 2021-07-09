@@ -57,4 +57,14 @@ public class Snow : MonoBehaviour
             }
     }
 
+    public object CaptureState()
+    {
+        return isActivated;
+    }
+
+    public void RestoreState(object state)
+    {
+        isActivated = (bool) state;
+    }
+
 }

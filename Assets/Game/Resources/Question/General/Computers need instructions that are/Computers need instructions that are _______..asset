@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
   m_Name: Computers need instructions that are _______.
   m_EditorClassIdentifier: 
-  name: Computers need instructions that are _______.
+  name: Computers need instructions that are _______
   explanation: 
   answers:
   - {fileID: 11400000, guid: 98ddf46f5d4ac4022a150d655285889b, type: 2}

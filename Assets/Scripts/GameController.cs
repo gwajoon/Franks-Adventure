@@ -16,6 +16,9 @@ public class GameController : MonoBehaviour
 
     GameState stateBeforePause;
 
+    public SceneDetails currentScene { get; private set; }
+    public SceneDetails previousScene { get; private set; }
+
     public static GameController Instance { get; private set; }
 
     private void Awake()
@@ -105,6 +108,15 @@ public class GameController : MonoBehaviour
         if (state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                SavingSystem.i.Save("SaveSlot1");
+            }
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                SavingSystem.i.Load("SaveSlot1");
+            }
         }
         else if (state == GameState.Battle)
         {
@@ -114,5 +126,11 @@ public class GameController : MonoBehaviour
         {
             DialogueManager.Instance.HandleUpdate();
         }
+    }
+
+    public void setCurrentScene(SceneDetails currScene)
+    {
+        previousScene = currentScene;
+        currentScene = currScene;
     }
 }

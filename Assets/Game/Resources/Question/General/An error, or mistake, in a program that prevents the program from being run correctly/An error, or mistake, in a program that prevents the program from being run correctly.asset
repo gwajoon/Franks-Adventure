@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: An error, or mistake, in a program that prevents the program from being
     run correctly
   m_EditorClassIdentifier: 
-  name: What is the term forl an error, or mistake, in a program that prevents the
-    program from being run correctly.
-  explanation: 
+  name: What is the term for an error in a program that prevents the program from
+    working
+  explanation: It was named this because a moth flew into a computer!
   answers:
   - {fileID: 11400000, guid: c8bd7cd66fe874f46ba3b42e5fcefb07, type: 2}
   - {fileID: 11400000, guid: 626b7ba305a8a4fe1b3e9caad81d6ea1, type: 2}

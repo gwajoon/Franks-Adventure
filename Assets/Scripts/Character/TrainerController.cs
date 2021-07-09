@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrainerController : MonoBehaviour, Interactable
+public class TrainerController : MonoBehaviour, Interactable, ISavable
 {
     [SerializeField] Dialogue dialogue;
     [SerializeField] Dialogue dialogueAfterBattle;
@@ -86,6 +86,19 @@ public class TrainerController : MonoBehaviour, Interactable
 
         // set FOV of NPCs according to direction they face
         FOV.transform.eulerAngles = new Vector3(0f, 0f, angle);
+    }
+
+    public object CaptureState()
+    {
+        return battleLost;
+    }
+
+    public void RestoreState(object state)
+    {
+        battleLost = (bool) state;
+
+        if (battleLost)
+            FOV.gameObject.SetActive(false);
     }
 
     public Monster Monster

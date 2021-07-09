@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Desert : MonoBehaviour
+public class Desert : MonoBehaviour, ISavable
 {
     public BoulderHolder BH1;
     public BoulderHolder BH2;
@@ -42,5 +42,15 @@ public class Desert : MonoBehaviour
                 snpc.SetActive(true);
             }
         }
+    }
+
+    public object CaptureState()
+    {
+        return isActivated;
+    }
+
+    public void RestoreState(object state)
+    {
+        isActivated = (bool) state;
     }
 }

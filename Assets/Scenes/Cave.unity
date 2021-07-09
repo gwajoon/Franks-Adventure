@@ -136,11 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47.1
+      value: 78.1
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.2
+      value: 56.1
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -188,11 +188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
-      value: Loop Village
+      value: Snow Village
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593401359413, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -565,11 +565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7735156785175752542, guid: f970499ffe0102340b654ffb724b46cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45
+      value: 170.2
       objectReference: {fileID: 0}
     - target: {fileID: 7735156785175752542, guid: f970499ffe0102340b654ffb724b46cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 37.899998
       objectReference: {fileID: 0}
     - target: {fileID: 7735156785175752542, guid: f970499ffe0102340b654ffb724b46cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -793,7 +793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054396042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -48.21, y: 5.88, z: 0}
+  m_LocalPosition: {x: 76.99, y: 36.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -812,11 +812,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.76
+      value: 78.44
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.56
+      value: 40.46
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
@@ -898,11 +898,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.68
+      value: 78.52
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.27
+      value: 48.17
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
@@ -19604,7 +19604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804395554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.7, y: 2.3, z: 0}
+  m_LocalPosition: {x: 89.5, y: 33.199997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1606401449}
@@ -19627,11 +19627,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.25
+      value: 78.95
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.99
+      value: 25.96
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564532, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19679,7 +19679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
@@ -19687,11 +19687,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593401359413, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.09
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593401359413, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.49
+      value: 0.313
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}

@@ -18,5 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 78af6ffc98d5d4f76addefb09481845d, type: 2}
   - {fileID: 11400000, guid: 3187efc08716e478ba7c3a33ceb53d0a, type: 2}
   sprite: {fileID: 21300000, guid: 0d293b21f66214775b3a3df98436b170, type: 3}
-  maxHp: 50
+  maxHp: 100
   attack: 25

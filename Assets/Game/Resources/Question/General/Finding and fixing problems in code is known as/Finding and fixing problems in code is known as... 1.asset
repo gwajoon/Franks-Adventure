@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
   m_Name: Finding and fixing problems in code is known as... 1
   m_EditorClassIdentifier: 
-  name: Finding and fixing problems in code is known as_______.
+  name: Finding and fixing problems in code is known as_______
   explanation: 
   answers:
   - {fileID: 11400000, guid: af7b8510954c046e6a32b7176bfa9d4e, type: 2}

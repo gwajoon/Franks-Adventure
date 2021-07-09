@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
@@ -127603,6 +127603,7 @@ GameObject:
   - component: {fileID: 2080432725}
   - component: {fileID: 2080432730}
   - component: {fileID: 2080432724}
+  - component: {fileID: 2080432731}
   m_Layer: 8
   m_Name: Trainer1
   m_TagString: Untagged
@@ -127793,6 +127794,19 @@ MonoBehaviour:
     _base: {fileID: 11400000, guid: 927f884dcc423457aa92904b82e8485e, type: 2}
   exclamation: {fileID: 1955593104}
   FOV: {fileID: 1673815191}
+--- !u!114 &2080432731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080432723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4881f89f8b930e34489bbb86116ccd4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueId: b0aecef7-0ab3-4252-ab65-ace8faab1538
 --- !u!1001 &6942316592666160035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127854,11 +127868,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564534, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: destinationPortal
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593317564535, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_Name
-      value: CODEsert
+      value: To CODEsert
       objectReference: {fileID: 0}
     - target: {fileID: 6942316593401359413, guid: 5e4d77be76961204aa733b1367d8805b, type: 3}
       propertyPath: m_LocalPosition.x

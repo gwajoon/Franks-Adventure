@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 995773fc1148f4c8dbf2951c541cc6b3, type: 3}
   m_Name: Breaking a problem down into smaller pieces
   m_EditorClassIdentifier: 
-  name: Breaking a problem down into smaller pieces is known as ________.
+  name: Breaking a problem down into smaller pieces is known as ________
   explanation: Another word for it is "breaking down".
   answers:
   - {fileID: 11400000, guid: 120e779b8312b4b1c87040f07248bc6b, type: 2}
