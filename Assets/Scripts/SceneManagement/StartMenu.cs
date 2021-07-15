@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class StartMenu : MonoBehaviour
 {
+    public AudioSource SelectionSound;
     void Start()
     {
 
@@ -19,5 +20,10 @@ public class StartMenu : MonoBehaviour
     public void LoadGame()
     {
         SavingSystem.i?.Load("SaveSlot1");
+    }
+
+    public void PlaySound()
+    {
+        SelectionSound.Play();
     }
 }
