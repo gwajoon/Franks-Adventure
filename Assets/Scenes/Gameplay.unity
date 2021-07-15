@@ -194,6 +194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave
       objectReference: {fileID: 0}
+    - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
 --- !u!1 &24277073 stripped
@@ -292,6 +296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EssentialObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 1009539669545315167, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2236598430354968885, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
       propertyPath: uniqueId
       value: 8aaa423c-2a7f-4520-b869-f918a67115dc
@@ -388,6 +396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CODEsert
       objectReference: {fileID: 0}
+    - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
 --- !u!1001 &1414172698
@@ -460,6 +472,10 @@ PrefabInstance:
     - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
       propertyPath: m_Name
       value: HouseA
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
@@ -551,6 +567,10 @@ PrefabInstance:
     - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
       propertyPath: m_Name
       value: Riddle Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
@@ -663,6 +683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Snow Village
       objectReference: {fileID: 0}
+    - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
 --- !u!1 &1907747670 stripped
@@ -756,6 +780,10 @@ PrefabInstance:
     - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
       propertyPath: m_Name
       value: HomeTown
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654477459145411896, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17a6aae73eded46758fca1af457566fa, type: 3}
