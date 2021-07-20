@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/HomeTown.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Game/HouseA.unity
+    path: Assets/Scenes/Game/Hometown Houses/HometownA.unity
     guid: d26a9cc225a4fde4c8e6431d3ef6ca1c
   - enabled: 1
     path: Assets/Scenes/Game/Riddle Building.unity
@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Snow Village.unity
     guid: 74c9e1a9b483640569e78ced12ad44df
+  - enabled: 1
+    path: Assets/Scenes/Game/Hometown Houses/HometownB.unity
+    guid: 0c1b02084f8f1484aace4133274c75c3
+  - enabled: 1
+    path: Assets/Scenes/Game/Hometown Houses/HometownC.unity
+    guid: ead7eb29b312bf7458d1692e424daff3
   m_configObjects: {}

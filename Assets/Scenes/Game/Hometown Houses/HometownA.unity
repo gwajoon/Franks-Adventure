@@ -3404,25 +3404,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkDownSprites:
-  - {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5527661196443274707, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2495014906627460004, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 5610367206947713552, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 5184477266919304435, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1782168704573880261, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 5184477266919304435, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 4054353320855820206, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkUpSprites:
-  - {fileID: 307091595780809877, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -2126968859773451732, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5535047699543943917, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -4526993761146232485, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: 2005625633495849734, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 3566383101309021831, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 2005625633495849734, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -6738622681673728242, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkLeftSprites:
-  - {fileID: 4614894318121576524, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 7369579285134121275, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -1211714280344312584, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: 6842672397523141539, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -7615703073151264027, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -2803232238589450238, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -7615703073151264027, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1084117811454475399, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkRightSprites:
-  - {fileID: 2230936588577103941, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -9111473675286820144, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5627484699997550656, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
-  - {fileID: -5051899674784280284, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  - {fileID: -1161800480879272563, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: 6181105854143971167, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -1161800480879272563, guid: 136d789df254642098657d21a61ff8da, type: 3}
+  - {fileID: -5870217325753322275, guid: 136d789df254642098657d21a61ff8da, type: 3}
   defaultDirection: 1
 --- !u!114 &228794544
 MonoBehaviour:
@@ -3452,7 +3452,7 @@ MonoBehaviour:
   dialogue:
     lines:
     - Nice to meet you!
-    - Did you know that boolean values refer to either true or false?
+    - I wish Perry never came to our land...
   movementPattern:
   - {x: 2, y: 0}
   - {x: -2, y: 0}
@@ -3474,7 +3474,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 1.4867424, y: 1.9517045}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3544,7 +3544,7 @@ SpriteRenderer:
   m_SortingLayerID: 31337199
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8922328891513336043, guid: 7d80af93af7044e12960c36583c48ce2, type: 3}
+  m_Sprite: {fileID: 5184477266919304435, guid: 136d789df254642098657d21a61ff8da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3651,8 +3651,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - There are a lot of programming languages in the world.
-    - Java, JavaScript, C#, Ruby, Swift, Python, C++, HTML, CSS, etc...
+    - I am sorry about my brother there
+    - He has been really affected by the disruption of our world
+    - I hope a saviour wil come soon...
   movementPattern:
   - {x: 2, y: 0}
   - {x: -2, y: 0}

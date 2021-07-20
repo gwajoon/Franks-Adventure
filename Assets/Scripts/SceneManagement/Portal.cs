@@ -40,4 +40,4 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
 }
 
 public enum DestinationIdentifier { HomeTownDesert, DesertCave, CaveSnow, CaveRiddleA, CaveRiddleB, SnowHomeTown, HomeTownHouseA, HomeTownHouseB, 
-DesertHouseA, DesertHouseB, DesertHouseC, SnowHouseA, SnowHouseB }
+HomeTownHouseC, DesertHouseA, DesertHouseB, DesertHouseC, SnowHouseA, SnowHouseB }
