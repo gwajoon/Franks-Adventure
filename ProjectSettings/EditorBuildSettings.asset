@@ -12,20 +12,32 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: c9e127c4ea9894bf6b5be6a1628dd1d1
   - enabled: 1
-    path: Assets/Scenes/Game/Cave.unity
-    guid: a768808645c9d474bb73898443c8e77e
+    path: Assets/Scenes/Game/HomeTown.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Game/CODEsert House.unity
-    guid: c6183a099fce74b0dbbbcec2b1a75d00
+    path: Assets/Scenes/Game/Hometown Houses/Hometown House A.unity
+    guid: d26a9cc225a4fde4c8e6431d3ef6ca1c
+  - enabled: 1
+    path: Assets/Scenes/Game/Hometown Houses/Hometown House B.unity
+    guid: 0c1b02084f8f1484aace4133274c75c3
+  - enabled: 1
+    path: Assets/Scenes/Game/Hometown Houses/Hometown House C.unity
+    guid: ead7eb29b312bf7458d1692e424daff3
   - enabled: 1
     path: Assets/Scenes/Game/CODEsert.unity
     guid: 8bad71ffd5bdf4802b43294fd4aa3254
   - enabled: 1
-    path: Assets/Scenes/Game/HomeTown.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Game/Desert House/CODEsert House A.unity
+    guid: b5c69ec5a6e6dbc4b9236cad14cd1ff8
   - enabled: 1
-    path: Assets/Scenes/Game/Hometown Houses/HometownA.unity
-    guid: d26a9cc225a4fde4c8e6431d3ef6ca1c
+    path: Assets/Scenes/Game/Desert House/CODEsert House B.unity
+    guid: eede5cf6d9298ea4689132e7908e6a2d
+  - enabled: 1
+    path: Assets/Scenes/Game/Desert House/CODEsert House C.unity
+    guid: 160baf2c3f7d81b4aaf0d6fb5cf805a0
+  - enabled: 1
+    path: Assets/Scenes/Game/Cave.unity
+    guid: a768808645c9d474bb73898443c8e77e
   - enabled: 1
     path: Assets/Scenes/Game/Riddle Building.unity
     guid: a0058832a4c588a4b85ffef254a1c3e7
@@ -36,9 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Snow Village.unity
     guid: 74c9e1a9b483640569e78ced12ad44df
   - enabled: 1
-    path: Assets/Scenes/Game/Hometown Houses/HometownB.unity
-    guid: 0c1b02084f8f1484aace4133274c75c3
+    path: Assets/Scenes/Game/Snowvillage Houses/SnowHouseA.unity
+    guid: fe6398f32ae5b9b458710e26a138ce7e
   - enabled: 1
-    path: Assets/Scenes/Game/Hometown Houses/HometownC.unity
-    guid: ead7eb29b312bf7458d1692e424daff3
+    path: Assets/Scenes/Game/Snowvillage Houses/SnowHouseB.unity
+    guid: 55fe8d8e15f412b41a212d56d61d1b01
   m_configObjects: {}
