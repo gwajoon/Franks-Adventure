@@ -243,8 +243,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   essentialObjectsPrefab: {fileID: 1009539669545315167, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
-  x: 0
-  y: 0
 --- !u!4 &78837934
 Transform:
   m_ObjectHideFlags: 0
