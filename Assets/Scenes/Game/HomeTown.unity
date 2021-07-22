@@ -91559,7 +91559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7735156785175752541, guid: f970499ffe0102340b654ffb724b46cd, type: 3}
       propertyPath: x
-      value: -5.5
+      value: -5.8
       objectReference: {fileID: 0}
     - target: {fileID: 7735156785175752541, guid: f970499ffe0102340b654ffb724b46cd, type: 3}
       propertyPath: y
