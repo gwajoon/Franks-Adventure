@@ -40830,7 +40830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1680c0a8bba4470b250719d99ff9bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkDownSprites: []
+  walkDownSprites:
+  - {fileID: 243745231049629982, guid: 136d789df254642098657d21a61ff8da, type: 3}
   walkUpSprites:
   - {fileID: 243745231049629982, guid: 136d789df254642098657d21a61ff8da, type: 3}
   - {fileID: 7180232783274023057, guid: 136d789df254642098657d21a61ff8da, type: 3}
@@ -42497,7 +42498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1814434879
 RectTransform:
   m_ObjectHideFlags: 0

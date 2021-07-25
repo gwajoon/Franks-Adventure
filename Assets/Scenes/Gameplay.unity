@@ -402,11 +402,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1009539670116450607, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2236598430354968885, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
       propertyPath: uniqueId
       value: 8aaa423c-2a7f-4520-b869-f918a67115dc
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3550333144133556755, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2236598430354968885, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2a2ff0df5b399e34d8eeb77972509db9, type: 3}
 --- !u!1001 &893999937
 PrefabInstance:
@@ -1197,6 +1206,7 @@ MonoBehaviour:
   - {fileID: 2014613969}
   - {fileID: 1027058543}
   - {fileID: 1252826559}
+  - {fileID: 24277074}
 --- !u!1001 &1907747669
 PrefabInstance:
   m_ObjectHideFlags: 0
