@@ -23,4 +23,9 @@ public class StartMenu : MonoBehaviour
     {
         SelectionSound.Play();
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
