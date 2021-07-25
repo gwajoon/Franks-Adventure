@@ -96748,9 +96748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     lines:
-    - Well well, its you again.
-    - Too late! I have already captured Mikami, Comland's chief!
-    - Nobody can stop me now MUAHAHA!
+    - Well well, who do we have here? A kid?
   dialogueAfterBattle:
     lines:
     - HAHAHA I knew you couldn't answer my question!

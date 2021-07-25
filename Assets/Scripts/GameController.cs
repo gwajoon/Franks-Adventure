@@ -117,10 +117,6 @@ public class GameController : MonoBehaviour
             {
                 SavingSystem.i.Load("SaveSlot1");
             }
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Application.Quit();
-            }
         }
         else if (state == GameState.Battle)
         {
