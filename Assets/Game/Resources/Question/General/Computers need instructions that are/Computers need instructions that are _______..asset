@@ -17,7 +17,7 @@ MonoBehaviour:
   answers:
   - {fileID: 11400000, guid: 98ddf46f5d4ac4022a150d655285889b, type: 2}
   - {fileID: 11400000, guid: c14284bf51dff43ae8d8a88a931f7163, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 599eaff2223eb41489f41597bb3b304c, type: 2}
   - {fileID: 11400000, guid: 5bb60b570e1154845b08a8e662cc6999, type: 2}
   correctAnswer: {fileID: 11400000, guid: 5bb60b570e1154845b08a8e662cc6999, type: 2}
   answered: 0

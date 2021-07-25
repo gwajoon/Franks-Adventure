@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Snowvillage Houses/SnowHouseB.unity
     guid: 55fe8d8e15f412b41a212d56d61d1b01
+  - enabled: 1
+    path: Assets/Scenes/CutScenes/EndingScene.unity
+    guid: d5d60d11d958d496181de089865fe20f
+  - enabled: 1
+    path: Assets/Scenes/Game/HomeTown Ending.unity
+    guid: e7ccffc73e1824c2281155d8056819d5
   m_configObjects: {}

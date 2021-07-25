@@ -7,10 +7,6 @@ using UnityEngine.UI;
 public class StartMenu : MonoBehaviour
 {
     public AudioSource SelectionSound;
-    void Start()
-    {
-
-    }
 
     public void PlayGame() 
     {
@@ -19,7 +15,8 @@ public class StartMenu : MonoBehaviour
 
     public void LoadGame()
     {
-        SavingSystem.i?.Load("SaveSlot1");
+        SceneManager.LoadScene(2);
+        SavingSystem.i.Load("SaveSlot1");
     }
 
     public void PlaySound()

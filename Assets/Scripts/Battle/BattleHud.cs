@@ -16,6 +16,11 @@ public class BattleHud : MonoBehaviour
         _monster = monster;
 
         nameText.text = monster.Base.Name;
+
+        if (monster.Base.name == "Frank")
+        {
+            monster.HP = 100;
+        }
         hpBar.setHP((float) monster.HP / monster.MaxHp);
     }
 

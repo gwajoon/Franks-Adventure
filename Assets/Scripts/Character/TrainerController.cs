@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class TrainerController : MonoBehaviour, Interactable, ISavable
 {
@@ -11,7 +13,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
     [SerializeField] GameObject FOV;
 
     // state of trainer
-    bool battleLost;
+    public bool battleLost;
     Character character; 
 
     private void Awake()
@@ -72,6 +74,11 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
     private void Update()
     {
         character.HandleUpdate();
+
+        if (battleLost && gameObject.tag == "Final Perry")
+            {
+                SceneManager.LoadScene(17, LoadSceneMode.Single);
+            }
     }
 
     public void SetFOVRotation(FacingDirection dir)

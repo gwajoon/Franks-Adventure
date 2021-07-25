@@ -109,7 +109,7 @@ public class GameController : MonoBehaviour
         {
             playerController.HandleUpdate();
 
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKeyDown(KeyCode.G))
             {
                 SavingSystem.i.Save("SaveSlot1");
             }
